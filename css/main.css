@@ -1,0 +1,82 @@
+header{
+    background-color: rgba(0, 0, 0, .9); height: 100px;
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+header h1{width: 200px;}
+header h1 a{}
+header h1 a img{width: 100%;}
+header h1 nav{position: relative;}
+header nav .gnb{display: flex;}
+header nav .gnb > li{
+    margin-right: 50px;
+    position: relative;
+    z-index: 200;
+}
+header nav .gnb > li:last-child{margin: 0;}
+header nav .gnb > li > a{
+    color: #fff;
+    font-size: 1.00rem;
+    letter-spacing: -2%;
+}
+header .lnb{display: flex;}
+header .lnb a{margin-left: 20px;}
+header .lnb a:first-child{margin-left: 0;}
+header .lnb .search{}
+header .lnb .user{}
+header .lnb .bag{}
+main{}
+main .visual{position: relative; height: 80vh; overflow: hidden;}
+main img{width: 1920px;}
+main .visual .txt{
+    position: absolute;
+    left: 260px; top: 225px;
+}
+main .visual .txt h1{
+    font-size: 1.78rem;
+    font-weight: 300;
+    line-height: 2;
+    color: #fff;
+    margin-bottom: 55px;
+}
+main .visual .txt h1 span{
+    font-weight: 500;
+}
+main .visual .txt .start{
+    padding: 15px 15px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background-color: transparent;
+    font-size: 0.89rem;
+    color: #fff;
+}
+/*  */
+main .cont1 > ul{}
+main .cont1 > ul > li{}
+main .cont1 > ul > li a{}
+main .cont1 > ul > li a img{}
+/*  */
+main .cont1 .food{
+    width: 1400px;
+    margin: 0 auto;
+}
+main .food h2{}
+main .food ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+main .food ul li{
+
+}
+main .food ul li .fimg{
+    width: 300px; height: 300px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+main .food ul li .fimg img{
+    width: 100%;
+}
+main .food ul li .ftxt{}
