@@ -1,82 +1,68 @@
 header{
-    background-color: rgba(0, 0, 0, .9); height: 100px;
+    background-color: transparent; height: 80px;
     max-width: 1920px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 60px;
+    padding: 0 60.5px;
+    position: fixed;
+    z-index: 100;
 }
-header h1{width: 200px;}
-header h1 a{}
-header h1 a img{width: 100%;}
-header h1 nav{position: relative;}
-header nav .gnb{display: flex;}
-header nav .gnb > li{
-    margin-right: 50px;
-    position: relative;
-    z-index: 200;
+header h1{width: 210px;}
+header img{width: 100%;}
+header .gnb{display: flex; margin: 0 500px;}
+header .gnb > li{
+    margin-right: 55px;
 }
-header nav .gnb > li:last-child{margin: 0;}
-header nav .gnb > li > a{
+header .gnb > li a{
     color: #fff;
-    font-size: 1.00rem;
-    letter-spacing: -2%;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1.0rem;
+    letter-spacing: 0.02em;
 }
-header .lnb{display: flex;}
-header .lnb a{margin-left: 20px;}
-header .lnb a:first-child{margin-left: 0;}
-header .lnb .search{}
-header .lnb .user{}
-header .lnb .bag{}
-main{}
-main .visual{position: relative; height: 80vh; overflow: hidden;}
-main img{width: 1920px;}
+header .gnb > li:last-child{margin-right: 0;}
+header .util{display: flex;}
+header .util > li{
+    margin-right: 20px;
+    width: 24px;
+}
+header .util > li:last-child{margin-right: 0;}
+header .util li > img{width: 100%;}
+main .visual{
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+main .visual img{
+    width: 1920px;
+}
 main .visual .txt{
     position: absolute;
-    left: 260px; top: 225px;
+    top: 0; left: 0;
+    padding: 490px 0 0 260px;
 }
-main .visual .txt h1{
-    font-size: 1.78rem;
-    font-weight: 300;
-    line-height: 2;
+main .visual .txt p{
     color: #fff;
-    margin-bottom: 55px;
+    font-family: "Red Hat Display", sans-serif;
+    letter-spacing: 0.02em;
 }
-main .visual .txt h1 span{
-    font-weight: 500;
+main .visual .txt .txt01{
+    font-size: 2.22rem;
 }
-main .visual .txt .start{
-    padding: 15px 15px;
-    border: 1px solid #fff;
-    border-radius: 30px;
-    background-color: transparent;
+main .visual .txt .txt02{
+    font-size: 1.44rem;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+main .visual .txt a{
+    color: #fff;
+    font-family: "Red Hat Display", sans-serif;
     font-size: 0.89rem;
-    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    border-radius: 30px;
+    padding: 15px;
+    background-color: transparent;
+    letter-spacing: 0.02em;
 }
-/*  */
-main .cont1 > ul{}
-main .cont1 > ul > li{}
-main .cont1 > ul > li a{}
-main .cont1 > ul > li a img{}
-/*  */
-main .cont1 .food{
-    width: 1400px;
-    margin: 0 auto;
-}
-main .food h2{}
-main .food ul{
-    display: flex;
-    flex-wrap: wrap;
-}
-main .food ul li{
-
-}
-main .food ul li .fimg{
-    width: 300px; height: 300px;
-    overflow: hidden;
-    border-radius: 16px;
-}
-main .food ul li .fimg img{
-    width: 100%;
-}
-main .food ul li .ftxt{}

@@ -3,144 +3,473 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tosspay</title>
-        <!-- style, script -->
-        <link rel="stylesheet" href="./css/base.css">
-        <link rel="stylesheet" href="./css/main.css">
-        <!-- 제이쿼리 라이브러리 -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="./scripts/common.js" defer></script>
-        <script src="./scripts/main.js" defer></script>
+    <title>toss pay Mall</title>
+    <!-- font -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header>
-        <h1><a href="./index.html"><img src="./img/logo.png" alt=""></a></h1>
+        <h1><a href="./index.html"><img src="./img/logo.png" alt="토스페이"></a></h1>
         <nav>
             <ul class="gnb">
                 <li><a href="#">애플공식대리점</a></li>
                 <li><a href="#">브랜드관</a></li>
-                <li><a href="#">베스트</a></li>
-                <li><a href="#">최다리뷰</a></li>
-                <li><a href="#">특가</a></li>
-                <li><a href="#">하나더</a></li>
-                <li><a href="#">세일</a></li>
-                <li><a href="#">신상품</a></li>
+                <li><a href="#">카테고리</a></li>
+                <li><a href="#">프로모션</a></li>
             </ul>
         </nav>
         <div class="lnb">
-            <a href="#" class="search"><img src="./img/icon1.png" alt="검색하기"></a>
-            <a href="#" class="user"><img src="./img/icon2.png" alt="로그인 하기"></a>
-            <a href="#" class="bag"><img src="./img/icon3.png" alt="장바구니함 가기"></a>
+            <a href="#"><img src="./img/lnb01.png" alt="검색하기"></a>
+            <a href="#"><img src="./img/lnb02.png" alt="로그인"></a>
+            <a href="#"><img src="./img/lnb03.png" alt="장바구니"></a>
         </div>
     </header>
     <main>
         <div class="visual">
-            <img src="./img/main.jpg" alt="토스페이와 토스프라임 상세페이지 가기">
-            <div class="txt">
-                <h1>tosspay X tossprime<br><span>적립 할인 캐시백을 한번에.</span></h1>
-                <a href="#" class="start">토스프라임 가입 바로가기</a>
+            <img src="./img/main.gif" alt="">
+            <div class="txt_group">
+                <h1>tosspay X tossprime</h1>
+                <p>적립 할인 캐시백을 한번에.</p>
+                <a href="#" class="signup_link">토스프라임 가입 바로가기</a>
             </div>
         </div>
-        <div class="cont1">
-            <ul class="category">
-                <li><a href="#"><img src="./img/" alt=""></a></li>
-                <li><a href="#"><img src="./img/" alt=""></a></li>
-                <li><a href="#"><img src="./img/" alt=""></a></li>
-                <li><a href="#"><img src="./img/" alt=""></a></li>
-                <li><a href="#"><img src="./img/" alt=""></a></li>
-                <li><a href="#"><img src="./img/" alt=""></a></li>
-                <li><a href="#"><img src="./img/" alt=""></a></li>
-                <li><a href="#"><img src="./img/" alt=""></a></li>
-                <li><a href="#"><img src="./img/" alt=""></a></li>
-                <li><a href="#"><img src="./img/" alt=""></a></li>
+        <!--  브랜드관  1번째 컨텐츠 영역 시작 -->
+        <section class="brand_wrap container">
+            <div class="b_title_wrap">
+                <h1>Brands<br>Exhibition</h1>
+                <p>국내외 최고의 브랜드들을<br>토스페이가 한 곳에 모아봤습니다.</p>
+                <a href="#" class="more_view">전체보기<img src="./img/arrow.png" alt="전체보기 링크"></a>
+            </div>
+            <ul class="b_product_all">
+                <li>
+                    <div class="b_img">
+                        <a href="#"><img src="./img/c01_01.png" alt="브랜드 상품 이미지"><span>아디다스</span></a>
+                    </div>
+                    <div class="b_txt">
+                        <h2>세상의 모든 스포츠를 포용하는 브랜드</h2>
+                        <p>스포츠부터 스트릿 스타일까지 패션템이 필요할 때</p>
+                        <div class="tag">
+                            <a href="#">데일리슈즈</a>
+                            <a href="#">런닝화</a>
+                            <a href="#">슈퍼노바</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#"><img src="./img/c01_01.png" alt=""><p>아디다스</p></a>
+                    </div>
+                    <div class="txt">
+                        <h3>세상의 모든 스포츠를 포용하는 브랜드</h3>
+                        <p>스포츠부터 스트릿 스타일까지 패션템이 필요할 때</p>
+                        <div class="tag">
+                            <a href="#">데일리슈즈</a>
+                            <a href="#">런닝화</a>
+                            <a href="#">슈퍼노바</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#"><img src="./img/c01_01.png" alt=""><p>아디다스</p></a>
+                    </div>
+                    <div class="txt">
+                        <h3>세상의 모든 스포츠를 포용하는 브랜드</h3>
+                        <p>스포츠부터 스트릿 스타일까지 패션템이 필요할 때</p>
+                        <div class="tag">
+                            <a href="#">데일리슈즈</a>
+                            <a href="#">런닝화</a>
+                            <a href="#">슈퍼노바</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
-            <div class="food">
-                <h2><span>"</span>tosspay 식품</h2>
+        </section>
+        <!--  애플관  2번째 컨텐츠 영역 시작 -->
+        <section class="apple_wrap container">
+            <div class="a_title_wrap">
+                <h1>Apple Authorized Reseller</h1>
+                <p>이제 토스에서 Apple을 만나보세요</p>
+                <a href="#" class="more_view">전체보기<img src="./img/arrow.png" alt="전체보기 링크"></a>
+            </div>   
+            <div class="a_product_all">
+                <div class="preveiw">
+                    <!-- 백그라운드 이미지-->
+                    <h2>언제 어디서나 유용하게, 애플</h2>
+                    <p>애플은 이제 우리의 삶에서 뗄 수 없는 브랜드가 되었죠.<br>토스페이에서 애플 정품들을 만나보세요.</p>
+                </div>
                 <ul>
-                    <li><a href="#">
-                        <div class="fimg"><img src="./img/c1.jpg" alt=""></div>
-                        <div class="ftxt">
-                            <h3>[풀무원] <span>롤 유부초밥 1팩</span></h3>
-                            <p class="price">29,900원</p>
-                            <p class="percent">
-                                <span>50%</span>19,900원
-                            </p>
+                    <li>
+                        <a href="#"><img src="./img/apple02.png" alt="애플 아이패드 이미지"></a>
+                        <div class="a_txt">
+                            <h3>APPLE IPAD PRO</h3>
+                            <p>불가능이란 얇다</p>
                         </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="fimg"><img src="./img/c2.jpg" alt=""></div>
-                        <div class="ftxt">
-                            <h3>[풀무원] <span>롤 유부초밥 1팩</span></h3>
-                            <p class="price">29,900원</p>
-                            <p class="percent">
-                                <span>50%</span>19,900원
-                            </p>
+                        <div class="a_product01">
+                            <a href="#">
+                                <div class="a_product_img"><img src="./img/apple04.png" alt=""></div>
+                                <div class="a_ptroduct_txt">
+                                    <h4>Apple iPad Pro 13 M4 Wi-Fi 256GB</h4>
+                                    <p>1,999,000<span>무료배송</span></p>
+                                </div>
+                            </a>
+                            <div class="a_product_wish">
+                                <a href="#"><img src="./img/bag.png" alt="장바구니"></a>
+                                <a href="#"><img src="./img/heart.png" alt="관심 상품 등록"></a>
+                            </div>
                         </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="fimg"><img src="./img/c3.jpg" alt=""></div>
-                        <div class="ftxt">
-                            <h3>[풀무원] <span>롤 유부초밥 1팩</span></h3>
-                            <p class="price">29,900원</p>
-                            <p class="percent">
-                                <span>50%</span>19,900원
-                            </p>
+                        <div class="a_product02">
+                            <a href="#">
+                                <div class="a_product_img"><img src="./img/apple05.png" alt=""></div>
+                                <div class="a_ptroduct_txt">
+                                    <h4>Apple iPad Pro 13 M4 Wi-Fi 256GB</h4>
+                                    <p>1,999,000<span>무료배송</span></p>
+                                </div>
+                            </a>
+                            <div class="a_product_wish">
+                                <a href="#"><img src="./img/bag.png" alt="장바구니"></a>
+                                <a href="#"><img src="./img/heart.png" alt="관심 상품 등록"></a>
+                            </div>
                         </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="fimg"><img src="./img/c4.jpg" alt=""></div>
-                        <div class="ftxt">
-                            <h3>[풀무원] <span>롤 유부초밥 1팩</span></h3>
-                            <p class="price">29,900원</p>
-                            <p class="percent">
-                                <span>50%</span>19,900원
-                            </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/apple03.png" alt="애플 아이패드 이미지"></a>
+                        <div class="a_txt">
+                            <h3>APPLE PENCIL PRO</h3>
+                            <p>새롭게 써 내려가는 창의성의 미래</p>
                         </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="fimg"><img src="./img/c5.jpg" alt=""></div>
-                        <div class="ftxt">
-                            <h3>[풀무원] <span>롤 유부초밥 1팩</span></h3>
-                            <p class="price">29,900원</p>
-                            <p class="percent">
-                                <span>50%</span>19,900원
-                            </p>
+                        <div class="a_product03">
+                            <a href="#">
+                                <div class="a_product_img"><img src="./img/apple05.png" alt=""></div>
+                                <div class="a_ptroduct_txt">
+                                    <h4>Apple iPad Pro 13 M4 Wi-Fi 256GB</h4>
+                                    <p>1,999,000<span>무료배송</span></p>
+                                </div>
+                            </a>
+                            <div class="a_product_wish">
+                                <a href="#"><img src="./img/bag.png" alt="장바구니"></a>
+                                <a href="#"><img src="./img/heart.png" alt="관심 상품 등록"></a>
+                            </div>
                         </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="fimg"><img src="./img/c6.jpg" alt=""></div>
-                        <div class="ftxt">
-                            <h3>[풀무원] <span>롤 유부초밥 1팩</span></h3>
-                            <p class="price">29,900원</p>
-                            <p class="percent">
-                                <span>50%</span>19,900원
-                            </p>
+                        <div class="a_product04">
+                                <a href="#">
+                                    <div class="a_product_img"><img src="./img/apple06.png" alt=""></div>
+                                    <div class="a_ptroduct_txt">
+                                        <h4>Apple iPad Pro 13 M4 Wi-Fi 256GB</h4>
+                                        <p>1,999,000<span>무료배송</span></p>
+                                    </div>
+                                </a>
+                                <div class="a_product_wish">
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니"></a>
+                                    <a href="#"><img src="./img/heart.png" alt="관심 상품 등록"></a>
+                                </div>
                         </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="fimg"><img src="./img/c7.jpg" alt=""></div>
-                        <div class="ftxt">
-                            <h3>[풀무원] <span>롤 유부초밥 1팩</span></h3>
-                            <p class="price">29,900원</p>
-                            <p class="percent">
-                                <span>50%</span>19,900원
-                            </p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="fimg"><img src="./img/c8.jpg" alt=""></div>
-                        <div class="ftxt">
-                            <h3>[풀무원] <span>롤 유부초밥 1팩</span></h3>
-                            <p class="price">29,900원</p>
-                            <p class="percent">
-                                <span>50%</span>19,900원
-                            </p>
-                        </div>
-                    </a></li>
+                    </li>
                 </ul>
             </div>
-        </div>
+        </section>
+        <!--  카테고리  3번째 컨텐츠 영역 시작 -->
+        <section class="category_wrap container">
+            <div class="c_tab_wrap">
+                <h1>Category</h1>
+                <ul class="tab">
+                    <li><a href="#">전체</a></li>
+                    <li><a href="#">뷰티</a></li>
+                    <li><a href="#">패션</a></li>
+                    <li><a href="#">생활</a></li>
+                    <li><a href="#">식품</a></li>
+                    <li><a href="#">도서</a></li>
+                    <li><a href="#">인테리어</a></li>
+                    <li><a href="#">전자제품</a></li>
+                    <li><a href="#">출산·육아</a></li>
+                    <li><a href="#">여행·취미</a></li>
+                </ul>
+            </div>
+            <div class="c_product_all">
+                <div class="c_product_top">
+                    <div class="c_title_wrap">
+                        <h1>BEAUTY</h1>
+                        <p>토스페이에서 유명한 제품들을 조금 더 저렴하게 만나보세요</p>
+                        <a href="#" class="more_view">상품 더보기<img src="./img/arrow.png" alt="상품 더보기 링크"></a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="./img/beauty01.png" alt="뷰티 상품 이미지"></a>
+                            <div class="c_txt">
+                                <h3><span>[랑콤]</span>뗑이돌 롱라스팅 파운데이션 30ml 세트 10종 (택1)</h3>
+                                <p>89,000원</p>
+                                <p>15%<span>76,650원</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/beauty02.png" alt="뷰티 상품 이미지"></a>
+                            <div class="c_txt">
+                                <h3><span>[랑콤]</span>뗑이돌 롱라스팅 파운데이션 30ml 세트 10종 (택1)</h3>
+                                <p>89,000원</p>
+                                <p>15%<span>76,650원</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/beauty03.png" alt="뷰티 상품 이미지"></a>
+                            <div class="c_txt">
+                                <h3><span>[랑콤]</span>뗑이돌 롱라스팅 파운데이션 30ml 세트 10종 (택1)</h3>
+                                <p>89,000원</p>
+                                <p>15%<span>76,650원</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/beauty04.png" alt="뷰티 상품 이미지"></a>
+                            <div class="c_txt">
+                                <h3><span>[랑콤]</span>뗑이돌 롱라스팅 파운데이션 30ml 세트 10종 (택1)</h3>
+                                <p>89,000원</p>
+                                <p>15%<span>76,650원</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/beauty05.png" alt="뷰티 상품 이미지"></a>
+                            <div class="c_txt">
+                                <h3><span>[랑콤]</span>뗑이돌 롱라스팅 파운데이션 30ml 세트 10종 (택1)</h3>
+                                <p>89,000원</p>
+                                <p>15%<span>76,650원</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="c_product_bottom">
+                    <div class="c_title_wrap">
+                        <h1>BEAUTY</h1>
+                        <p>토스페이에서 유명한 제품들을 조금 더 저렴하게 만나보세요</p>
+                        <a href="#" class="more_view">상품 더보기<img src="./img/arrow.png" alt="상품 더보기 링크"></a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="./img/beauty06.png" alt="뷰티 상품 이미지"></a>
+                            <div class="c_txt">
+                                <h3><span>[랑콤]</span>뗑이돌 롱라스팅 파운데이션 30ml 세트 10종 (택1)</h3>
+                                <p>89,000원</p>
+                                <p>15%<span>76,650원</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/beauty07.png" alt="뷰티 상품 이미지"></a>
+                            <div class="c_txt">
+                                <h3><span>[랑콤]</span>뗑이돌 롱라스팅 파운데이션 30ml 세트 10종 (택1)</h3>
+                                <p>89,000원</p>
+                                <p>15%<span>76,650원</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/beauty08.png" alt="뷰티 상품 이미지"></a>
+                            <div class="c_txt">
+                                <h3><span>[랑콤]</span>뗑이돌 롱라스팅 파운데이션 30ml 세트 10종 (택1)</h3>
+                                <p>89,000원</p>
+                                <p>15%<span>76,650원</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/beauty09.png" alt="뷰티 상품 이미지"></a>
+                            <div class="c_txt">
+                                <h3><span>[랑콤]</span>뗑이돌 롱라스팅 파운데이션 30ml 세트 10종 (택1)</h3>
+                                <p>89,000원</p>
+                                <p>15%<span>76,650원</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/beauty10.png" alt="뷰티 상품 이미지"></a>
+                            <div class="c_txt">
+                                <h3><span>[랑콤]</span>뗑이돌 롱라스팅 파운데이션 30ml 세트 10종 (택1)</h3>
+                                <p>89,000원</p>
+                                <p>15%<span>76,650원</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/beauty11.png" alt="뷰티 상품 이미지"></a>
+                            <div class="c_txt">
+                                <h3><span>[랑콤]</span>뗑이돌 롱라스팅 파운데이션 30ml 세트 10종 (택1)</h3>
+                                <p>89,000원</p>
+                                <p>15%<span>76,650원</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="banner_wrap">
+            <img src="./img/banner.png" alt="">
+        </section>
+        <section class="exclusive_wrap container">
+            <h1>tosspay<span>’</span><span> Exclusive</span></h1>
+            <h2>칸예 웨스트 Vultures Listening Experience 티켓</h2>
+            <p>토스페이에서 단독으로 확보한 중앙좌석에서 관람하세요</p>
+            <p>그리고 10% 추가 할인 혜택까지</p>
+            <a href="#">티켓 예매하기</a>
+        </section>
+        <section class="promotion_wrap container">
+            <h1>tosspay<span>’</span><span> Promotion</span></h1>
+            <ul class="p_product_all">
+                <li>
+                    <div class="p_img">
+                        <a href="#"><img src="./img/" alt="프로모션 상품 이미지"><span>SALE</span></a>
+                    </div>
+                    <div class="p_txt">
+                        <h2>계절에 맞는 인테리어</h2>
+                        <p>에이리스트<span>|  가을맞이 시즌오프 ~29%</span></p>
+                    </div>
+                    <div class="p_prv">
+                        <a href="#"><img src="./img/promo05.png" alt="프로모션 상품 이미지"></a>
+                        <a href="#"><img src="./img/promo06.png" alt="프로모션 상품 이미지"></a>
+                        <div class="price">
+                            <p>테리 벨크로 메모리폼 실내화</p>
+                            <p>19,900원</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="p_img">
+                        <a href="#"><img src="./img/" alt="프로모션 상품 이미지"><span>SALE</span></a>
+                    </div>
+                    <div class="p_txt">
+                        <h2>계절에 맞는 인테리어</h2>
+                        <p>에이리스트<span>|  가을맞이 시즌오프 ~29%</span></p>
+                    </div>
+                    <div class="p_prv">
+                        <a href="#"><img src="./img/promo05.png" alt="프로모션 상품 이미지"></a>
+                        <a href="#"><img src="./img/promo06.png" alt="프로모션 상품 이미지"></a>
+                        <div class="price">
+                            <p>테리 벨크로 메모리폼 실내화</p>
+                            <p>19,900원</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="p_img">
+                        <a href="#"><img src="./img/" alt="프로모션 상품 이미지"><span>SALE</span></a>
+                    </div>
+                    <div class="p_txt">
+                        <h2>계절에 맞는 인테리어</h2>
+                        <p>에이리스트<span>|  가을맞이 시즌오프 ~29%</span></p>
+                    </div>
+                    <div class="p_prv">
+                        <a href="#"><img src="./img/promo05.png" alt="프로모션 상품 이미지"></a>
+                        <a href="#"><img src="./img/promo06.png" alt="프로모션 상품 이미지"></a>
+                        <div class="price">
+                            <p>테리 벨크로 메모리폼 실내화</p>
+                            <p>19,900원</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="p_img">
+                        <a href="#"><img src="./img/" alt="프로모션 상품 이미지"><span>SALE</span></a>
+                    </div>
+                    <div class="p_txt">
+                        <h2>계절에 맞는 인테리어</h2>
+                        <p>에이리스트<span>|  가을맞이 시즌오프 ~29%</span></p>
+                    </div>
+                    <div class="p_prv">
+                        <a href="#"><img src="./img/promo05.png" alt="프로모션 상품 이미지"></a>
+                        <a href="#"><img src="./img/promo06.png" alt="프로모션 상품 이미지"></a>
+                        <div class="price">
+                            <p>테리 벨크로 메모리폼 실내화</p>
+                            <p>19,900원</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class=""></section>
+        <footer>
+            <div class="f_top">
+                <div class="f_top_left">
+                    <div class="category">
+                        <h1>CATEGORY</h1>
+                        <ul>
+                            <li>뷰티</li>
+                            <li>패션</li>
+                            <li>식품</li>
+                            <li>도서</li>
+                            <li>인테리어</li>
+                            <li>전자제품</li>
+                            <li>출산 · 육아</li>
+                            <li>여행 · 취미</li>
+                        </ul>
+                    </div>
+                    <div class="brands">
+                        <h1>BRANDS</h1>
+                        <ul>
+                            <li>애플공식대리점</li>
+                            <li>가전</li>
+                            <li>뷰티</li>
+                            <li>식품</li>
+                            <li>생활</li>
+                            <li>패션</li>
+                            <li>아동</li>
+                            <li>인테리어</li>
+                        </ul>
+                    </div>
+                    <div class="toss">
+                        <h1>TOSS</h1>
+                        <ul>
+                            <li>토스뱅크</li>
+                            <li>토스증권</li>
+                            <li>토스인슈어런스</li>
+                            <li>토스페어런츠</li>
+                            <li>토스씨엑스</li>
+                            <li>토스플레이스</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="f_top_right">
+                    <div class="info">
+                        <h1>INFORMATION</h1>
+                        <ul>
+                            <li>공지사항</li>
+                            <li>1:1문의</li>
+                            <li>자주하는 질문</li>
+                            <li>토스페이 이용 안내</li>
+                            <li>토스프라임 가입 안내</li>
+                            <li>해외 결제 이용 안내</li>
+                        </ul>
+                    </div>
+                    <div class="privacy">
+                        <h1>PRIVACY</h1>
+                        <ul>
+                            <li>이용약관</li>
+                            <li>개인정보처리방침</li>
+                            <li>서비스이용약관</li>
+                            <li>사업자정보확인</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="f_bottom">
+                <div class="f_bottom">
+                    <div class="f_bottom_left">
+                        <ul>
+                            <h1>CONTACT</h1>
+                            <P>상호  주식회사 비바리퍼블리카  |  호스팅 서비스  주식회사 비바리퍼블리카
+                                |  대표자  이승건
+                                사업장<br> 
+                                주소  서울특별시 강남구 테헤란로 142, 12층
+                                | 전화번호  1599-4905  |  이메일  support@toss.im<br>
+                                사업자 등록번호  120-88-01280  |  통신판매업 신고번호  2014-서울강남-03377</P>
+                        </ul>
+                    </div>
+                    <div class="f_bottom_right">
+                        <ul>
+                            <h1>CUSTOMER</h1>
+                            <P>전화번호  1599-4905<br> 
+                                이메일  support@toss.im<br>
+                                고객문의센터  서울특별시 강남구 테헤란로133, 9층</P>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
-
 </body>
 </html>
