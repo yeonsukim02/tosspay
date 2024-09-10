@@ -21,13 +21,13 @@ header .gnb > li a{
     letter-spacing: 0.02em;
 }
 header .gnb > li:last-child{margin-right: 0;}
-header .util{display: flex;}
-header .util > li{
+header .lnb{display: flex;}
+header .lnb > li{
     margin-right: 20px;
     width: 24px;
 }
-header .util > li:last-child{margin-right: 0;}
-header .util li > img{width: 100%;}
+header .lnb > li:last-child{margin-right: 0;}
+header .lnb li > img{width: 100%;}
 main .visual{
     position: relative;
     height: 80vh;
