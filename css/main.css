@@ -1,59 +1,27 @@
-header{
-    background-color: transparent; height: 80px;
-    max-width: 1920px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 60.5px;
-    position: fixed;
-    z-index: 100;
-}
-header h1{width: 210px;}
-header img{width: 100%;}
-header .gnb{display: flex; margin: 0 500px;}
-header .gnb > li{
-    margin-right: 55px;
-}
-header .gnb > li a{
-    color: #fff;
-    font-family: "Red Hat Display", sans-serif;
-    font-size: 1.0rem;
-    letter-spacing: 0.02em;
-}
-header .gnb > li:last-child{margin-right: 0;}
-header .lnb{display: flex;}
-header .lnb > li{
-    margin-right: 20px;
-    width: 24px;
-}
-header .lnb > li:last-child{margin-right: 0;}
-header .lnb li > img{width: 100%;}
 main .visual{
     position: relative;
-    height: 80vh;
+    height: 900px;
     overflow: hidden;
 }
 main .visual img{
-    width: 1920px;
+    width: 100%;
 }
 main .visual .txt{
     position: absolute;
-    top: 0; left: 0;
-    padding: 490px 0 0 260px;
+    left: 260px; bottom: 200px;
 }
-main .visual .txt p{
+main .visual .txt h1{
+    font-size: 2.22rem;
     color: #fff;
     font-family: "Red Hat Display", sans-serif;
-    letter-spacing: 0.02em;
 }
-main .visual .txt .txt01{
-    font-size: 2.22rem;
-}
-main .visual .txt .txt02{
+main .visual .txt p{
     font-size: 1.44rem;
     font-weight: 600;
     padding-top: 30px;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
+    color: #fff;
+    font-family: "Red Hat Display", sans-serif;
 }
 main .visual .txt a{
     color: #fff;
@@ -64,5 +32,209 @@ main .visual .txt a{
     border-radius: 30px;
     padding: 15px;
     background-color: transparent;
-    letter-spacing: 0.02em;
+}
+/* 브랜드관 시작 */
+main .brand_wrap{
+    background-color: blue;
+    margin-top: 200px;
+    display: flex;
+    align-content: space-between;
+}
+main .c_product_wrap .c_title_wrap,
+main .brand_wrap .b_title_wrap{
+    width: 325px;
+    background-color: red;
+}
+main .brand_wrap .b_title_wrap h1,
+main .apple_wrap .a_title_wrap h1,
+main .category_wrap .c_tab_wrap h1,
+main .c_product_wrap .c_title_wrap h1{
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+    font-size: 3.0rem;
+    letter-spacing: -0.02em;
+    line-height: 70%;
+}
+main .brand_wrap .b_title_wrap h1{line-height: 140%;}
+
+main .c_product_all .c_title_wrap p,
+main .brand_wrap .b_title_wrap p{
+    font-size: 1.13rem;
+    font-weight: 500;
+    letter-spacing: -0.02rem;
+}
+main .c_product_all .c_title_wrap a,
+main .brand_wrap .b_title_wrap a{
+    font-size: 1.13rem;
+    font-weight: 600;
+    letter-spacing: -0.02rem;
+    color: #0064FF;
+    padding-right: 20px;
+    background: url(../img/arrow.png) no-repeat right center;
+}
+main .brand_wrap .b_product_all{}
+main .brand_wrap .b_product_all .b_img{}
+main .brand_wrap .b_product_all .b_img a{}
+main .brand_wrap .b_product_all .b_img a img{}
+main .brand_wrap .b_product_all .b_img a span{
+    font-size: 1.13rem;
+    letter-spacing: -0.02rem;
+    font-weight: 100;
+    color: #fff;
+}
+main .brand_wrap .b_product_all .b_txt{
+    margin-top: 30px;
+}
+main .brand_wrap .b_product_all .b_txt h2{
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+}
+main .brand_wrap .b_product_all .b_txt p{
+    font-size: 1.13rem;
+    letter-spacing: 0.02rem;
+    color: #767676;
+    margin: 10px 0;
+}
+main .brand_wrap .b_product_all .b_txt .tag{}
+main .brand_wrap .b_product_all .b_txt .tag a{
+    letter-spacing: 0.02rem;
+    color: #898989;
+    border-radius: 16px;
+    border: 1px solid #898989;
+    padding: 5px 10px;
+}
+/* 애플관 시작 */
+main .apple_wrap{
+
+}
+main .apple_wrap .a_title_wrap{
+    width: 100%;
+    text-align: center;
+    background-color: red;
+}
+main .apple_wrap .a_title_wrap h1{
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+    font-size: 3.0rem;
+    letter-spacing: -0.02em;
+    line-height: 70%;
+}
+main .apple_wrap .a_title_wrap p{
+    margin: 20px 0;
+}
+main .apple_wrap .a_title_wrap a{
+    background: url(../img/arrow.png) no-repeat right center;
+    padding-right: 20px;
+    color: #0064FF;
+}
+main .apple_wrap .a_product_all{
+    display: flex;
+    align-items: space-between;
+    padding: 0 80px;
+}
+main .apple_wrap .a_product_all .preview{
+    background: url(../img/apple01.png) no-repeat;
+    background-color: red;
+    width: 668px;
+}
+main .apple_wrap .a_product_all .preview h2{
+    font-weight: 600;
+    letter-spacing: -0.02rem;
+    font-size: 2.50rem;
+    color: #fff;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+main .apple_wrap .a_product_all .preview p{
+    font-size: 1.13rem;
+    letter-spacing: -0.02rem;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+main .apple_wrap .a_product_all .product{
+    display: flex;
+    background-color: blue;
+}
+main .apple_wrap .a_product_all .product li{}
+main .apple_wrap .a_product_all .product li > a{}
+main .apple_wrap .a_product_all .product li > a > img{
+    width: 100%;
+}
+main .apple_wrap .a_product_all .product li .a_txt{}
+main .apple_wrap .a_product_all .product li .a_txt h3{}
+main .apple_wrap .a_product_all .product li .a_txt p{}
+main .apple_wrap .a_product_all .product li .a_product{display: flex;}
+main .apple_wrap .a_product_all .product li .a_product > a{display: flex;}
+main .apple_wrap .a_product_all .product li .a_product .a_product_wish{display: flex;}
+main .apple_wrap .a_product_all .product li .a_product .a_product_wish a{}
+main .apple_wrap .a_product_all .product li .a_product .a_product_wish a img{}
+/* 카테고리 시작 */
+main .category_wrap{}
+main .category_wrap .c_tab_wrap{
+
+}
+main .category_wrap .c_tab_wrap h1{
+    width: 100%; text-align: center;
+    background-color: red;
+}
+main .category_wrap .c_tab_wrap .tab{
+    display: flex;
+    width: 1700px; margin: 0 auto;
+    background-color: #f5f5f5;
+}
+main .category_wrap .c_tab_wrap .tab li{
+    width: 10%; text-align: center; 
+    line-height: 55px;
+}
+main .category_wrap .c_tab_wrap .tab .active{background-color: #000;}
+main .category_wrap .c_tab_wrap .tab .active a{color: #fff;}
+main .category_wrap .c_tab_wrap .tab li a{}
+main .category_wrap .c_product_wrap{display: flex; flex-direction: column;}
+main .category_wrap .c_product_wrap .c_product_top{display: flex;}
+main .category_wrap .c_product_wrap .c_product_top .c_title_wrap{}
+main .category_wrap .c_product_wrap .c_product_top .c_title_wrap h1{}
+main .category_wrap .c_product_wrap .c_product_top .c_title_wrap p{}
+main .category_wrap .c_product_wrap .c_product_top .c_title_wrap a{}
+main .category_wrap .c_product_wrap .c_product_top ul{}
+main .category_wrap .c_product_wrap .c_product_top ul li{}
+main .category_wrap .c_product_wrap .c_product_bottom{display: flex;}
+main .category_wrap .c_product_wrap .c_product_bottom ul{}
+main .category_wrap .c_product_wrap .c_product_bottom ul li{}
+
+main .banner_wrap{}
+main .banner_wrap img{width: 100%;}
+main .exclusive_wrap{
+    background: url(../img/exclusive.png) no-repeat;
+    background-size: cover;
+}
+main .e_top{
+    padding-top: 50px;
+    padding-bottom: 468px;
+}
+main .e_top h1{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    background-color: red;
+}
+main .e_top h1 span{
+    color: #fff;
+}
+main .e_bottom{
+    background-color: #000;
+    padding-top: 60px;
+    padding-bottom: 130px;
+    background-color: red;
+}
+main .e_bottom h2{
+    color: #fff;
+}
+main .e_bottom p{
+    color: #fff;
+}
+
+main .e_bottom a{
+    color: #fff;
 }
