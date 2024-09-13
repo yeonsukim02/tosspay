@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>toss pay mall_depth1</title>
+    <title>brand</title>
     <!-- font -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -22,6 +22,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./script/common.js" defer></script>
     <script src="./script/main.js" defer></script>
+    <script src="./script/brand.js" defer></script>
 </head>
 <body>
     <header>
@@ -80,11 +81,11 @@
     </header>
     <main>
         <section class="visual">
-            <img src="./img/brand/main.png" alt="소니 광고 이미지">
+            <!-- 백그라운드 이미지 -->
             <div class="txt">
                 <h1>tosspay Brands Collection</h1>
                 <p>200여개의 브랜드를 한 곳에서.<br>토스페이만의 브랜드 컬렉션</p>
-                <a href="#" class="signup_link">전체 컬렉션 보기</a>
+                <a href="#" class="all_view">전체 컬렉션 보기</a>
             </div>
         </section>
         <section class="brand_wrap">
@@ -100,8 +101,7 @@
                 <li><a href="#"><img src="./img/brand/brand09.png" alt="테팔 로고 이미지"></a></li>
                 <li><a href="#"><img src="./img/brand/brand10.png" alt="하겐다즈 로고 이미지"></a></li>
                 <li><a href="#"><img src="./img/brand/brand11.png" alt="삼성 로고 이미지"></a></li>
-            </ul>/brand
-        </section>
+            </ul>
         <section class="category_wrap">
             <div class="c_tab_wrap">
                 <li class="active"><a href="#">가전</a></li>
@@ -120,20 +120,17 @@
             </div>
             <div class="new_wrap">
                 <ul class="new_product_wrap">
-                    <li class="n_01">
-                        <div class="n_img">
-                            <a href="#"><img src="./img/brand/sony01.png" alt="소니 제품 이미지"></a>
-                        </div>
+                    <li>
+                        <a href="#"><img src="./img/brand/sony01.png" alt="소니 제품 이미지"></a>
                         <div class="n_txt">
                             <h2>SONY LINKBUDS WF-L900</h2>
                             <p>귀에 완벽하게 맞는 형태인 인체공학적 디자인이 어우러진 LinkBuds</p>
                             <a href="#">자세히 보기</a>
                         </div>
                     </li>
-                    <li class="n_02">
-                        <div class="n_img">
-                            <a href="#"><img src="./img/brand/sony02.png" alt="소니 제품 이미지"></a>
-                        </div>
+                    <li>
+                        <a href="#"><img src="./img/brand/sony02.png" alt="소니 제품 이미지"></a>
+
                         <div class="n_txt">
                             <h2>SONY LINKBUDS WF-L900</h2>
                             <p>귀에 완벽하게 맞는 형태인 인체공학적 디자인이 어우러진 LinkBuds</p>
@@ -145,44 +142,44 @@
             <div class="best_wrap">
                 <h1>SONY’ BEST PRODUCTS</h1>
                 <ul class="best_product_wrap">
-                    <li class="b_01">
+                    <li>
                         <div class="b_img">
-                            <a href="#"></a><img src="./img/brand/sony03.png" alt="소니 상품 이미지">
+                            <a href="#"><img src="./img/brand/sony03.png" alt="소니 상품 이미지"></a>
                         </div>
                         <div class="b_txt">
                             <h2>SONY ULTWEAR YY-2981</h2>
                             <p>259,000원</p>
-                            <a href="#">자세히 보기</a>
+                            <a href="#" class="more_view">자세히 보기</a>
                         </div>
                     </li>
-                    <li class="b_02">
+                    <li>
                         <div class="b_img">
-                            <a href="#"></a><img src="./img/brand/sony04.png" alt="소니 상품 이미지">
+                            <a href="#"><img src="./img/brand/sony04.png" alt="소니 상품 이미지"></a>
                         </div>
                         <div class="b_txt">
                             <h2>SONY LINKBUDS-S WF-LS900N</h2>
                             <p>249,000원</p>
-                            <a href="#">자세히 보기</a>
+                            <a href="#" class="more_view">자세히 보기</a>
                         </div>
                     </li>
-                    <li class="b_03">
+                    <li>
                         <div class="b_img">
-                            <a href="#"></a><img src="./img//brand/sony05.png" alt="소니 상품 이미지">
+                            <a href="#"><img src="./img//brand/sony05.png" alt="소니 상품 이미지"></a>
                         </div>
                         <div class="b_txt">
                             <h2>SONY FLOATRUN WI-OE610</h2>
                             <p>169,000원</p>
-                            <a href="#">자세히 보기</a>
+                            <a href="#" class="more_view">자세히 보기</a>
                         </div>
                     </li>
-                    <li class="b_04">
+                    <li>
                         <div class="b_img">
-                            <a href="#"></a><img src="./img/brand/sony06.png" alt="소니 상품 이미지">
+                            <a href="#"><img src="./img/brand/sony06.png" alt="소니 상품 이미지"></a>
                         </div>
                         <div class="b_txt">
                             <h2>SONY CAMERA ILCE-9M3</h2>
                             <p>7980,000원</p>
-                            <a href="#">자세히 보기</a>
+                            <a href="#" class="more_view">자세히 보기</a>
                         </div>
                     </li>
                 </ul>
@@ -190,34 +187,34 @@
         </section>
         <section class="pick_wrap">
             <div class="title_wrap">
-                <h1>ABOUT ELECTRONICS</h1>
+                <h2>ABOUT ELECTRONICS</h2>
                 <p>토스페이가 선택한<br><span>전자제품 브랜드</span></p>
             </div>
             <ul class="p_product_wrap">
-                <li class="p_01">
+                <li>
                     <a href="#"><img src="./img/brand/pick01.png" alt="소니 상품 이미지"></a>
                     <p>크리에이터를 위한 기술로 감동을<br>선사하는 브랜드입니다.</p>
-                    <span><img src="./img/brand/company01.png" alt="소니 로고 이미지"></span>
+                    <p><img src="./img/brand/company01.png" alt="소니 로고 이미지"></p> 
                 </li>
-                <li class="p_02">
+                <li>
                     <a href="#"><img src="./img/brand/pick02.png" alt="소니 상품 이미지"></a>
                     <p>크리에이터를 위한 기술로 감동을<br>선사하는 브랜드입니다.</p>
-                    <span><img src="./img/brand/company02.png" alt="소니 로고 이미지"></span>
+                    <p><img src="./img/brand/company02.png" alt="소니 로고 이미지"></p>
                 </li>
-                <li class="p_03">
+                <li>
                     <a href="#"><img src="./img/brand/pick03.png" alt="소니 상품 이미지"></a>
                     <p>크리에이터를 위한 기술로 감동을<br>선사하는 브랜드입니다.</p>
-                    <span><img src="./img/brand/company03.png" alt="소니 로고 이미지"></span>
+                    <p><img src="./img/brand/company03.png" alt="소니 로고 이미지"></p>
                 </li>
-                <li class="p_04">
+                <li>
                     <a href="#"><img src="./img/brand/pick04.png" alt="소니 상품 이미지"></a>
                     <p>크리에이터를 위한 기술로 감동을<br>선사하는 브랜드입니다.</p>
-                    <span><img src="./img/brand/company04.png" alt="소니 로고 이미지"></span>
+                    <p><img src="./img/brand/company04.png" alt="소니 로고 이미지"></p>
                 </li>
-                <li class="p_05">
+                <li>
                     <a href="#"><img src="./img/brand/pick05.png" alt="소니 상품 이미지"></a>
                     <p>크리에이터를 위한 기술로 감동을<br>선사하는 브랜드입니다.</p>
-                    <span><img src="./img/brand/company05.png" alt="소니 로고 이미지"></span>
+                    <p><img src="./img/brand/company05.png" alt="소니 로고 이미지"></p>
                 </li>
             </ul> 
         </section>

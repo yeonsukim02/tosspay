@@ -1,4 +1,5 @@
 main .visual{
+    background: url(../img/brand/main.png);
     position: relative;
     height: 700px;
     overflow: hidden;
