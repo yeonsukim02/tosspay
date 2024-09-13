@@ -84,13 +84,13 @@
             <div class="product_img_wrap"><!-- 스와이퍼 -->
                 <img src="./img/sony/main.png" alt="소니 헤드폰 이미지">
             </div>
-            <form name="product_detail_wrap" action="">
+            <form id="product_detail_wrap" name="product_detail_wrap" action="" method="get">
                 <div class="p_name">
                     <h1>WH-1000XM5</h1>
                     <p>#몰입의 즐거움 #스테디헤드폰</p>
-                    <div class="price_free_wrap">
+                    <div class="price_delivery_wrap">
                         <div class="price_wrap">
-                            <span><strong>419,000</strong>원</span>
+                            <span class="price"><strong>419,000</strong>원</span>
                             <del>519,000</del>
                             <em>19%</em>
                         </div>
@@ -100,14 +100,14 @@
                 <div class="p_color">
                     <h2>색상</h2>
                     <div class="color_wrap">
-                        <div class="blue"></div>
-                        <div class="silver"></div>
-                        <div class="black"></div>
+                        <a href="#" class="blue"><span>남색</span></a>
+                        <a href="#" class="silver"><span>실버</span></a>
+                        <a href="#" class="black"><span>검정</span></a>
                     </div>
                 </div>
                 <div class="p_select">
                     <h2>제품 선택</h2>
-                    <select id="select_group">
+                    <select id="select_group" name="select_group">
                         <option>제품을 선택하세요</option>
                         <option value="blue">WH-1000XM5 / 미드나잇블루</option>
                         <option value="silver">"WH-1000XM5 / 플래티넘실버</option>
@@ -117,14 +117,14 @@
                 <div class="p_total">
                     <div class="total_wrap">
                         <div class="total_group">
-                            <strong>총 상품 금액 </strong>
-                            <span>총 상품 금액</span>
+                            <strong>총 상품 금액</strong>
+                            <span class="total_price">(총 <span>-</span>개)</span>
                         </div>
-                        <p>-원</p>
+                        <p class="total_price"><span>-</span>원</p>
                     </div>
                     <div class="btn_wrap">
                         <div class="btn_icon">
-                            <a href="#"><img src="./img/sony/heart.png" alt="찜하기 이미지"></a>
+                            <a href="#"><img src="./img/sony/heart.png" alt="찜하기"></a>
                             <a href="#"><img src="./img/sony/shoppingbag.png " alt="장바구니 담기"></a>
                             <a href="#"><img src="./img/sony/present.png " alt="선물하기"></a>
                         </div>
@@ -133,39 +133,39 @@
                 </div>
             </form>
         </section>
-        <section class="recommend_wrap">
+        <section class="recommend_wrap"><!-- 스와이퍼 -->
             <h1>함께 구매하시면 좋은 추천 제품</h1>
             <ul class="r_product_wrap">
                 <li>
                     <a href="#"><img src="./img/sony/product01.png" alt="소니 상품 이미지"></a>
                     <div class="r_txt">
                         <h2>INZONE Buds</h2>
-                        <p>게이머를 위한 완벽한 이어폰</p>
-                        <strong>259,000원</strong>
+                        <p class="info">게이머를 위한 완벽한 이어폰</p>
+                        <p class="price">259,000원</p>
                     </div>
                 </li>
                 <li>
                     <a href="#"><img src="./img/sony/product02.png" alt="소니 상품 이미지"></a>
                     <div class="r_txt">
                         <h2>INZONE Buds</h2> 
-                        <p>게이머를 위한 완벽한 이어폰</p>
-                        <strong>259,000원</str>
+                        <p class="info">게이머를 위한 완벽한 이어폰</p>
+                        <p class="price">259,000원</p>
                     </div>
                 </li>
                 <li>
                     <a href="#"><img src="./img/sony/product03.png" alt="소니 상품 이미지"></a>
                     <div class="r_txt">
                         <h2>INZONE Buds</h2> 
-                        <p>게이머를 위한 완벽한 이어폰</p>
-                        <strong>259,000원</str>
+                        <p class="info">게이머를 위한 완벽한 이어폰</p>
+                        <p class="price">259,000원</p>
                     </div>
                 </li>
                 <li>
                     <a href="#"><img src="./img/sony/product04.png" alt="소니 상품 이미지"></a>
                     <div class="r_txt">
                         <h2>INZONE Buds</h2> 
-                        <p>게이머를 위한 완벽한 이어폰</p>
-                        <strong>259,000원</str> 
+                        <p class="info">게이머를 위한 완벽한 이어폰</p>
+                        <p class="price">259,000원</p>
                     </div>
                 </li>
             </ul>
@@ -173,6 +173,7 @@
         <section class="detail_page_wrap">
             <img src="./img/sony/detail_page.png" alt="소니 상세 페이지">
         </section>
+        <!--  -->
         <section class="banner_wrap">
 
         </section>
@@ -243,9 +244,10 @@
                 </li>
             </ul>
         </section>
+        <!--  -->
         <section class="video_wrap">
             <h2>SONY PRODUCT VIDEO</h2>
-            <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/fROmO9sy3DU?si=IDwNSkyC9gE9eNOt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <iframe class="videon" src="https://www.youtube.com/embed/fROmO9sy3DU?si=IDwNSkyC9gE9eNOt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
         <section class="story_wrap">
             <div class="s_title">
@@ -254,28 +256,28 @@
             </div>
             <ul class="s_story_wrap">
                 <li>
-                    <a href="#"><img src="./img/sony/story01.png" alt="소니 링크버드 제품 착용 광고 이미지 "></a>
+                    <a href="#"><img src="./img/sony/story01.png" alt=""></a>
                     <p class="s_txt">
                         <h2>뉴 라이프 스타일에 딱 맞춘 소니</h2>
                         <p>새로운 세대와 새로운 라이프 스타일에 맞춰 소니는 끊임없<br>이 발전해요.</p>
                     </p>
                 </li>
                 <li>
-                    <a href="#"><img src="./img/sony/story02.png" alt="소니 링크버드 제품 착용 광고 이미지 "></a>
+                    <a href="#"><img src="./img/sony/story02.png" alt=""></a>
                     <p class="s_txt">
                         <h2>내 몸에 맞춘 듯한 슬림핏 디자인</h2>
                         <p>당신의 일상, 소니 얼트퉤어 헤드폰과 함께</p>
                     </p>
                 </li>
                 <li>
-                    <a href="#"><img src="./img/sony/story03.png" alt="소니 링크버드 제품 착용 광고 이미지 "></a>
+                    <a href="#"><img src="./img/sony/story03.png" alt=""></a>
                     <p class="s_txt">
                         <h2>제품의 사용과 함께  발전하는 내 역량</h2>
                         <p>새롭게 출시된 소니의 제품들로 창조해내고 싶었던 것들을<br>마음껏 구현해 보세요. </p>
                     </p>
                 </li>
             </ul>
-            <div><a href="https://www.sony.co.kr/">SONY 홈페이지 바로가기<!-- 백그라운드 이미지, 화살표 --></a></div>
+            <a href="https://www.sony.co.kr/">SONY 홈페이지 바로가기<!-- 백그라운드 이미지, 화살표 --></a>
         </section>
     </main>
     <footer>
