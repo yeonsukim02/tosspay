@@ -81,20 +81,16 @@
     </header>
     <main>
         <section class="product_wrap">
-            <div class="product_img">
+            <div class="product_img_wrap"><!-- 스와이퍼 -->
                 <img src="./img/sony/main.png" alt="소니 헤드폰 이미지">
-                <div class="arrow">
-                    <a href="#" class="arrow_left"><img src="./img/sony/arrow_left.png" alt="슬라이드 왼쪽 화살표"></a>
-                    <a href="#" class="arrow_right"><img src="./img/sony/arrow_right.png" alt="슬라이드 오른쪽 화살표"></a>
-                </div>
             </div>
-            <form name="product_detail" action="">
+            <form name="product_detail_wrap" action="">
                 <div class="p_name">
                     <h1>WH-1000XM5</h1>
-                    <p>#몰입의 즐거움  #스테디헤드폰</p>
-                    <div class="price_wrap">
-                        <div class="price">
-                            <strong>419,000원</strong>
+                    <p>#몰입의 즐거움 #스테디헤드폰</p>
+                    <div class="price_free_wrap">
+                        <div class="price_wrap">
+                            <span><strong>419,000</strong>원</span>
                             <del>519,000</del>
                             <em>19%</em>
                         </div>
@@ -103,35 +99,37 @@
                 </div>
                 <div class="p_color">
                     <h2>색상</h2>
-                    <ul class="color_wrap">
-                        <li><a href="#"><img src="./img/sony/color01.png" alt="색상표 이미지 남색"></a></li>
-                        <li><a href="#"><img src="./img/sony/color02.png" alt="색상표 이미지 베이지색"></a></li>
-                        <li><a href="#"><img src="./img/sony/color03.png" alt="색상표 이미지 검정색"></a></li>
-                    </ul>
+                    <div class="color_wrap">
+                        <div class="blue"></div>
+                        <div class="silver"></div>
+                        <div class="black"></div>
+                    </div>
                 </div>
                 <div class="p_select">
                     <h2>제품 선택</h2>
-                    <select name="" id="">
-                        <option value="select">제품을 선택하세요</option>
+                    <select id="select_group">
+                        <option>제품을 선택하세요</option>
                         <option value="blue">WH-1000XM5 / 미드나잇블루</option>
                         <option value="silver">"WH-1000XM5 / 플래티넘실버</option>
                         <option value="black">WH-1000XM5 / 블랙</option>
                     </select>
                 </div>
                 <div class="p_total">
-                    <h2>총 상품 금액<span>(총-개)</span><strong>-원</strong></h2>
-                    <ul class="icon_wrap">
-                        <li>
-                            <a href="#"><img src="./img/sony/heart.png" alt="상품 찜하기 이미지"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/sony/shoppingbag.png " alt="상품 장바구니 담기 이미지"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/sony/present.png " alt="상품 선물하기 이미지"></a>
-                        </li>
-                    </ul>
-                    <div class="submit"><a href="#">바로 구매하기</a></div>
+                    <div class="total_wrap">
+                        <div class="total_group">
+                            <strong>총 상품 금액 </strong>
+                            <span>총 상품 금액</span>
+                        </div>
+                        <p>-원</p>
+                    </div>
+                    <div class="btn_wrap">
+                        <div class="btn_icon">
+                            <a href="#"><img src="./img/sony/heart.png" alt="찜하기 이미지"></a>
+                            <a href="#"><img src="./img/sony/shoppingbag.png " alt="장바구니 담기"></a>
+                            <a href="#"><img src="./img/sony/present.png " alt="선물하기"></a>
+                        </div>
+                        <a class="btn_buy" href="#">바로 구매하기</a>
+                    </div>
                 </div>
             </form>
         </section>
