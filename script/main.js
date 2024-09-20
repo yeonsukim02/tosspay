@@ -1,20 +1,31 @@
 const b_product_all = new Swiper(".b_product_all",{
-    //direction:'vertical',
-    //effect:'flip',
-    /* direction과 effect는 동시 사용 안됨, fade cube flip cards */
-    /* direction과 effect 둘 다 안적으면 기본값 */
-    slidesPerView: 3,
+    slidesPerView: 3.5,
     spaceBetween: 20,
     autoplay:{delay:2000},
-    loop:true, /* 3>1로 한방향으로 자연스럽게 변경 */
+    loop:true,
 })
-const c_product_all = new Swiper(".c_product_all",{
-    //direction:'vertical',
-    //effect:'flip',
-    /* direction과 effect는 동시 사용 안됨, fade cube flip cards */
-    /* direction과 effect 둘 다 안적으면 기본값 */
-    slidesPerView: 4,
+const c_product_top_all = new Swiper(".c_product_top_all",{
+    slidesPerView: 4.5,
     spaceBetween: 20,
     autoplay:{delay:2000},
-    loop:true, /* 3>1로 한방향으로 자연스럽게 변경 */
+    loop:true,
+})
+const c_product_bottom_all = new Swiper(".c_product_bottom_all",{
+    slidesPerView: 5.5,
+    spaceBetween: 20,
+    autoplay:{delay:2000},
+    loop:true,
+})
+const pick_product_all = new Swiper(".pick_product_all",{
+    slidesPerShow: 4,
+    slidesPerView: 4.5,
+    spaceBetween: 15,
+    autoplay:{delay:2000},
+    loop:true,
+})
+const p_product_all = new Swiper(".p_product_all",{
+    slidesPerView: 4,
+    spaceBetween: 15,
+    autoplay:{delay:2000},
+    loop:true,
 })
