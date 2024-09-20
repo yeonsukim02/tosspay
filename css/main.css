@@ -8,7 +8,7 @@ main .visual img{
 }
 main .visual .txt{
     position: absolute;
-    left: 260px; bottom: 200px;
+    left: 260px; top: 510px;
 }
 main .visual .txt h1{
     font-size: 2.22rem;
@@ -29,21 +29,22 @@ main .visual .txt a{
     font-size: 0.89rem;
     border: 1px solid #fff;
     border-radius: 10px;
-    border-radius: 30px;
+    border-radius: 30px;/*  */
     padding: 15px;
     background-color: transparent;
 }
 /* 브랜드관 시작 */
+main .container{padding-top: 200px;}
 main .brand_wrap{
-    background-color: blue;
-    margin-top: 200px;
+/*     background-color: blue; */
     display: flex;
     align-content: space-between;
 }
-main .c_product_wrap .c_title_wrap,
+main .category_wrap .c_title_wrap,
 main .brand_wrap .b_title_wrap{
-    width: 325px;
-    background-color: red;
+    width: 20%;
+    padding: 0 70px;
+/*     background-color: red; */
 }
 main .brand_wrap .b_title_wrap h1,
 main .apple_wrap .a_title_wrap h1,
@@ -56,14 +57,18 @@ main .c_product_wrap .c_title_wrap h1{
     line-height: 70%;
 }
 main .brand_wrap .b_title_wrap h1{line-height: 140%;}
-
-main .c_product_all .c_title_wrap p,
+main .apple_wrap .a_title_wrap p,
+main .c_product_wrap .c_title_wrap p,
 main .brand_wrap .b_title_wrap p{
     font-size: 1.13rem;
     font-weight: 500;
     letter-spacing: -0.02rem;
+    line-height: 140%;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
-main .c_product_all .c_title_wrap a,
+main .apple_wrap .a_title_wrap a,
+main .c_product_wrap .c_title_wrap a,
 main .brand_wrap .b_title_wrap a{
     font-size: 1.13rem;
     font-weight: 600;
@@ -73,36 +78,43 @@ main .brand_wrap .b_title_wrap a{
     background: url(../img/arrow.png) no-repeat right center;
 }
 main .brand_wrap .b_product_all{}
-main .brand_wrap .b_product_all .b_img{}
-main .brand_wrap .b_product_all .b_img a{}
-main .brand_wrap .b_product_all .b_img a img{}
-main .brand_wrap .b_product_all .b_img a span{
+main .brand_wrap .b_product_all .b_product_li .b_img{}
+main .brand_wrap .b_product_all .b_product_li .b_img a{position: relative;}
+main .brand_wrap .b_product_all .b_product_li .b_img a img{width: 100%;}
+main .brand_wrap .b_product_all .b_product_li .b_img a span{
     font-size: 1.13rem;
     letter-spacing: -0.02rem;
     font-weight: 100;
     color: #fff;
+    background-color: #000;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 4px; left: 0;
 }
-main .brand_wrap .b_product_all .b_txt{
-    margin-top: 30px;
+main .brand_wrap .b_product_all .b_product_li .b_txt{
+    padding-top: 30px;
 }
-main .brand_wrap .b_product_all .b_txt h2{
+main .brand_wrap .b_product_all .b_product_li .b_txt h2{
     font-size: 1.25rem;
     font-weight: 700;
     letter-spacing: 0.02rem;
+/*     background-color: yellow; */
 }
-main .brand_wrap .b_product_all .b_txt p{
+main .brand_wrap .b_product_all .b_product_li .b_txt p{
     font-size: 1.13rem;
     letter-spacing: 0.02rem;
     color: #767676;
-    margin: 10px 0;
+    padding: 10px 0;
+/*     background-color: red; */
 }
-main .brand_wrap .b_product_all .b_txt .tag{}
-main .brand_wrap .b_product_all .b_txt .tag a{
+main .brand_wrap .b_product_all .b_product_li .b_txt .tag{/* padding-top: 10px; */}
+main .brand_wrap .b_product_all .b_product_li .b_txt .tag a{
     letter-spacing: 0.02rem;
     color: #898989;
     border-radius: 16px;
     border: 1px solid #898989;
     padding: 5px 10px;
+    display: inline-block;
 }
 /* 애플관 시작 */
 main .apple_wrap{
@@ -111,7 +123,9 @@ main .apple_wrap{
 main .apple_wrap .a_title_wrap{
     width: 100%;
     text-align: center;
-    background-color: red;
+/*     background-color: red; */
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 main .apple_wrap .a_title_wrap h1{
     font-family: "Red Hat Display", sans-serif;
@@ -129,14 +143,15 @@ main .apple_wrap .a_title_wrap a{
     color: #0064FF;
 }
 main .apple_wrap .a_product_all{
+/*     background-color: yellow; */
     display: flex;
-    align-items: space-between;
+    justify-content: space-between;
     padding: 0 80px;
 }
 main .apple_wrap .a_product_all .preview{
-    background: url(../img/apple01.png) no-repeat;
-    background-color: red;
-    width: 668px;
+    background: url(../img/apple01.png) no-repeat 0 0/ 100% auto;
+    width: 45%;
+/*     background-color: green; */
 }
 main .apple_wrap .a_product_all .preview h2{
     font-weight: 600;
@@ -149,40 +164,69 @@ main .apple_wrap .a_product_all .preview h2{
 main .apple_wrap .a_product_all .preview p{
     font-size: 1.13rem;
     letter-spacing: -0.02rem;
+    line-height: 140%;
     color: #fff;
     margin-top: 30px;
     margin-left: 40px;
 }
 main .apple_wrap .a_product_all .product{
     display: flex;
-    background-color: blue;
+/*     background-color: blue; */
 }
-main .apple_wrap .a_product_all .product li{}
+main .apple_wrap .a_product_all .product li{
+    padding: 50px;
+}
+main .apple_wrap .a_product_all .product li:first-child{
+    border-right: 1px solid #b6b6b6;
+    border-image: linear-gradient(#fff 0%, #b6b6b6 50%, #fff 100%);
+    border-image-slice: 1;
+}
 main .apple_wrap .a_product_all .product li > a{}
 main .apple_wrap .a_product_all .product li > a > img{
     width: 100%;
 }
 main .apple_wrap .a_product_all .product li .a_txt{}
-main .apple_wrap .a_product_all .product li .a_txt h3{}
-main .apple_wrap .a_product_all .product li .a_txt p{}
-main .apple_wrap .a_product_all .product li .a_product{display: flex;}
+main .apple_wrap .a_product_all .product li .a_txt h3{
+    font-size: 1.25rem;
+    letter-spacing: -0.02rem;
+}
+main .apple_wrap .a_product_all .product li .a_txt p{
+    font-size: 1.88rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    padding: 10px 0;
+}
+main .apple_wrap .a_product_all .product li .a_product{
+    display: flex;
+    padding-top: 35px;
+}
 main .apple_wrap .a_product_all .product li .a_product > a{display: flex;}
+main .apple_wrap .a_product_all .product li .a_product > a > .a_product_img{}
+main .apple_wrap .a_product_all .product li .a_product > a > .a_product_txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+/*     background-color: red; */
+    padding-right: 40px;
+}
 main .apple_wrap .a_product_all .product li .a_product .a_product_wish{display: flex;}
 main .apple_wrap .a_product_all .product li .a_product .a_product_wish a{}
+main .apple_wrap .a_product_all .product li .a_product .a_product_wish a:first-child{padding-right: 5px;}
 main .apple_wrap .a_product_all .product li .a_product .a_product_wish a img{}
 /* 카테고리 시작 */
 main .category_wrap{}
-main .category_wrap .c_tab_wrap{
-
-}
+main .category_wrap .c_tab_wrap{}
 main .category_wrap .c_tab_wrap h1{
     width: 100%; text-align: center;
-    background-color: red;
+/*     background-color: red; */
 }
 main .category_wrap .c_tab_wrap .tab{
     display: flex;
-    width: 1700px; margin: 0 auto;
+    justify-items: center;
+    margin: 0 110px;
     background-color: #f5f5f5;
+    margin-top: 50px;
+/*     background-color: red; */
 }
 main .category_wrap .c_tab_wrap .tab li{
     width: 10%; text-align: center; 
@@ -190,43 +234,69 @@ main .category_wrap .c_tab_wrap .tab li{
 }
 main .category_wrap .c_tab_wrap .tab .active{background-color: #000;}
 main .category_wrap .c_tab_wrap .tab .active a{color: #fff;}
-main .category_wrap .c_tab_wrap .tab li a{}
+main .category_wrap .c_tab_wrap .tab li a{color: #898989;}
 main .category_wrap .c_product_wrap{display: flex; flex-direction: column;}
-main .category_wrap .c_product_wrap .c_product_top{display: flex;}
+main .category_wrap .c_product_wrap .c_product_top{
+    display: flex;
+    padding: 125px 0;
+}
 main .category_wrap .c_product_wrap .c_product_top .c_title_wrap{}
 main .category_wrap .c_product_wrap .c_product_top .c_title_wrap h1{}
 main .category_wrap .c_product_wrap .c_product_top .c_title_wrap p{}
 main .category_wrap .c_product_wrap .c_product_top .c_title_wrap a{}
-main .category_wrap .c_product_wrap .c_product_top ul{}
-main .category_wrap .c_product_wrap .c_product_top ul li{}
-main .category_wrap .c_product_wrap .c_product_bottom{display: flex;}
+main .category_wrap .c_product_wrap .c_product_top .c_product_top_all{}
+main .category_wrap .c_product_wrap .c_product_top .c_product_top_li{}
+main .category_wrap .c_product_wrap .c_product_top .c_product_top_li a{}
+main .category_wrap .c_product_wrap .c_product_top .c_product_top_li a img{}
+main .category_wrap .c_product_wrap .c_product_top .c_product_top_li .c_txt{}
+main .category_wrap .c_product_wrap .c_product_top .c_product_top_li .c_txt h3{}
+main .category_wrap .c_product_wrap .c_product_top .c_product_top_li .c_txt h3 span{}
+main .category_wrap .c_product_wrap .c_product_top .c_product_top_li .c_txt p{}
+main .category_wrap .c_product_wrap .c_product_top .c_product_top_li .c_txt span{}
+main .category_wrap .c_product_wrap .c_product_bottom{/* display: flex; */}
 main .category_wrap .c_product_wrap .c_product_bottom ul{}
 main .category_wrap .c_product_wrap .c_product_bottom ul li{}
-
+/* 배너 시작 */
 main .banner_wrap{}
 main .banner_wrap img{width: 100%;}
+/* 익스클루시브 시작 */
+main .tosspay_title{
+    font-size: 2.50rem;
+    font-weight: 600;
+    padding-bottom: 30px;
+/*     background-color: red; */
+}
+main .tosspay_title strong{
+    font-family: "Sarala", sans-serif;
+    font-size: 2.50rem; 
+    font-weight: 600;
+}
+main .tosspay_title span{font-family: "Red Hat Display", sans-serif;}
 main .exclusive_wrap{
     background: url(../img/exclusive.png) no-repeat;
     background-size: cover;
+    padding-top: 0;
 }
 main .e_top{
-    padding-top: 50px;
-    padding-bottom: 468px;
+    padding: 50px 0 468px;
 }
 main .e_top h1{
-    color: #fff;
     width: 100%;
     text-align: center;
-    background-color: red;
+    color: #fff;
+
 }
 main .e_top h1 span{
+    color: #fff;
+}
+main .e_top h1 strong{
     color: #fff;
 }
 main .e_bottom{
     background-color: #000;
     padding-top: 60px;
     padding-bottom: 130px;
-    background-color: red;
+    background-color: #000;
 }
 main .e_bottom h2{
     color: #fff;
@@ -234,7 +304,214 @@ main .e_bottom h2{
 main .e_bottom p{
     color: #fff;
 }
-
 main .e_bottom a{
     color: #fff;
 }
+/* 프로모션 시작 */
+main .promotion_wrap{
+    background: #F5F5F5;
+}
+main .promotion_wrap h1{
+    width: 100%;
+    text-align: center;
+}
+main .promotion_wrap h1 span{}
+main .promotion_wrap h1 strong{}
+main .promotion_wrap .p_product_all{/* display: flex; */}
+main .promotion_wrap .p_product_all .p_product_li{}
+main .promotion_wrap .p_product_all .p_product_li .p_img{}
+main .promotion_wrap .p_product_all .p_product_li .p_img a{position: relative;}
+main .promotion_wrap .p_product_all .p_product_li .p_img a img{width: 100%;}
+main .promotion_wrap .p_product_all .p_product_li .p_img a span{
+    font-size: 1.13rem;
+    letter-spacing: -0.02rem;
+    font-weight: 100;
+    color: #fff;
+    background-color: #000;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 4px; left: 1px;
+}
+main .promotion_wrap .p_product_all .p_product_li .p_txt{}
+main .promotion_wrap .p_product_all .p_product_li .p_txt h2{
+    
+}
+main .promotion_wrap .p_product_all .p_product_li .p_txt p{
+    font-size: 1.25rem;
+    color: #898989;
+
+}
+main .promotion_wrap .p_product_all .p_product_li .p_txt p span{
+    font-size: 1.13rem;
+    color: #898989;
+}
+main .promotion_wrap .p_product_all .p_product_li .p_txt p span::before{content: "|"; padding: 0 10px;}
+main .promotion_wrap .p_product_all .p_product_li .p_prv{display: flex; align-items: flex-end; background-color: yellow;}
+main .promotion_wrap .p_product_all .p_product_li .p_prv a{}
+main .promotion_wrap .p_product_all .p_product_li .p_prv a img{}
+main .promotion_wrap .p_product_all .p_product_li .p_prv .product{background-color: red;}
+main .promotion_wrap .p_product_all .p_product_li .p_prv .product a{}
+main .promotion_wrap .p_product_all .p_product_li .p_prv .product a img{}
+main .promotion_wrap .p_product_all .p_product_li .p_prv .price{}
+main .promotion_wrap .p_product_all .p_product_li .p_prv .price p{}
+/* 픽 시작 */
+main .pick_wrap{margin-left: 30px;}
+main .pick_wrap h1{}
+main .pick_wrap > .pick_product_all{}
+main .pick_wrap > .pick_product_all li{}
+main .pick_wrap > .pick_product_all li a{}
+main .pick_wrap > .pick_product_all li a img{}
+main .pick_wrap > .pick_product_all li .pick_txt{}
+main .pick_wrap > .pick_product_all li .pick_txt h2{}
+main .pick_wrap > .pick_product_all li .pick_txt p{}
+main .pick_wrap > .pick_product_all li .pick_txt p span{}
+main .pick_wrap > .pick_product_all li .pick_txt p span::before{content: "|"; padding: 0 10px;}
+/* 커머셜 시작 */
+main .commercial{}
+main .commercial .black{
+    padding-top: 90px;
+    background-color: #000;
+    text-align: center;
+    position: relative;
+    top: 45px;
+    z-index: 100;
+}
+main .commercial .black img{
+}
+main .commercial .blue{
+    background-color: #0064FF;
+    padding: 100px 0;
+    position: relative;
+    z-index: 200;
+}
+main .commercial .blue p{
+    width: 100%;
+    text-align: center;
+    /* background-color: red; */
+    font-size: 2.50rem;
+    font-weight: 300;
+    color: #fff;
+}
+main .event{
+    background-color: #000;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+main .event .card{
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+}
+main .event .card li{
+    width: 320px; height: 280px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 16px;
+    text-align: center;
+}
+main .event .card li img{}
+main .event .card li h1{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.38rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+main .event .card li p{}
+main .event .card .free{
+    padding-top: 60px;
+    background-color: #0064FF;
+}
+main .event .card .free h1{
+    color: #fff;
+}
+main .event .card .free p{
+    color: #fff;
+}
+main .event .card .coupon{
+    padding-top: 30px;
+}
+main .event .card .alipay{
+    padding-top: 30px;
+}
+main .event .card .prime{
+    background: url(../img/prime.png) no-repeat;            
+}
+main .event > img{
+    /* background-color: aqua; */
+    margin-top: 125px;
+}
+footer{}
+footer .f_top{
+    padding: 50px 260px 90px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #292929;
+}
+/* 공통 */
+footer .f_top ul{
+    margin-right: 120px;
+}
+footer .f_top ul:last-child{margin-right: 0;}
+footer .f_top ul li{
+    margin-bottom: 15px;
+}
+footer .f_top ul li a{
+    font-size: 1.13rem;
+    font-weight: 300;
+    color: #fff;
+}
+footer .f_top ul .title{margin-bottom: 30px;}
+footer .f_top ul .title a{
+    font-size: 1.13rem;
+    font-weight: 600;
+}
+footer .f_top .f_top_left{display: flex;}
+footer .f_top .f_top_left ul{}
+footer .f_top .f_top_left ul li{}
+footer .f_top .f_top_left .category{}
+footer .f_top .f_top_left .category li{}
+footer .f_top .f_top_left .category .title{}
+footer .f_top .f_top_left .brands{}
+footer .f_top .f_top_left .brands li{}
+footer .f_top .f_top_left .brands .title{}
+footer .f_top .f_top_left .toss{}
+footer .f_top .f_top_left .toss li{}
+footer .f_top .f_top_left .toss .title{}
+footer .f_top_right{display: flex;}
+footer .f_top_right ul{}
+footer .f_top_right ul li{}
+footer .f_top .f_top_left .info{}
+footer .f_top .f_top_left .info li{}
+footer .f_top .f_top_left .info .title{}
+footer .f_top .f_top_left .privacy{}
+footer .f_top .f_top_left .privacy li{}
+footer .f_top .f_top_left .privacy .title{}
+
+footer .f_bottom{
+    padding: 140px 260px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+}
+/* 공통 */
+footer .f_bottom{}
+footer .f_bottom ul{}
+footer .f_bottom ul li{
+    color: #fff;
+    margin-bottom: ;
+    font-size: 1.13rem;
+    line-height: 200%;
+}
+footer .f_bottom ul .title{
+    margin-bottom: 20px;
+    font-size: 1.13rem;
+    font-weight: 300;
+}
+footer .f_bottom .f_bottom_left{}
+footer .f_bottom .f_bottom_left .contact{}
+footer .f_bottom .f_bottom_left .contact li{}
+footer .f_bottom .f_bottom_right{}
+footer .f_bottom .f_bottom_right .customer{}
+footer .f_bottom .f_bottom_right .customer li{}
