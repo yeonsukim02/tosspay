@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>brand</title>
+    <title>brand | tosspay mall</title>
     <!-- font -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sarala:wght@400;700&display=swap" rel="stylesheet">
     <!-- 스와이퍼 플러그인 필수 연결파일 -->
     <!--플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -14,15 +15,14 @@
     <!--플러그인 필수 JS cdn 연결-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script/common.js" defer></script>
+    <script src="./script/brand.js" defer></script>
     <!-- css -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/brand.css">
-    <!-- 제이쿼리 라이브러리 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./script/common.js" defer></script>
-    <script src="./script/main.js" defer></script>
-    <script src="./script/brand.js" defer></script>
 </head>
 <body>
     <header>
@@ -41,13 +41,13 @@
                 </li>
                 <li><a href="#">브랜드관</a>
                     <ul class="sub">
-                        <li><a href="#">가전</a></li>
-                        <li><a href="#">뷰티</a></li>
-                        <li><a href="#">식품</a></li>
-                        <li><a href="#">생활</a></li>
-                        <li><a href="#">패션</a></li>
-                        <li><a href="#">아동</a></li>
-                        <li><a href="#">인테리어</a></li>
+                        <li><a href="./brand.html">가전</a></li>
+                        <li><a href="./brand.html">뷰티</a></li>
+                        <li><a href="./brand.html">식품</a></li>
+                        <li><a href="./brand.html">생활</a></li>
+                        <li><a href="./brand.html">패션</a></li>
+                        <li><a href="./brand.html">아동</a></li>
+                        <li><a href="./brand.html">인테리어</a></li>
                     </ul>
                 </li>
                 <li><a href="#">카테고리</a>
@@ -82,6 +82,7 @@
     <main>
         <section class="visual">
             <!-- 백그라운드 이미지 -->
+            <img src="./img/brand/main.png" alt="소니 브랜드 광고 이미지">
             <div class="txt">
                 <h1>tosspay Brands Collection</h1>
                 <p>200여개의 브랜드를 한 곳에서.<br>토스페이만의 브랜드 컬렉션</p>
@@ -89,21 +90,39 @@
             </div>
         </section>
         <section class="brand_wrap">
-            <ul class="b_name_wrap">
-                <li><a href="#"><img src="./img/brand/brand01.png" alt="유닉스 로고 이미지"></a></li>
-                <li><a href="#"><img src="./img/brand/brand02.png" alt="도브 로고 이미지"></a></li>
-                <li><a href="#"><img src="./img/brand/brand03.png" alt="라네즈 로고 이미지"></a></li>
-                <li><a href="#"><img src="./img/brand/brand04.png" alt="로고 이미지"></a></li>
-                <li><a href="#"><img src="./img/brand/brand05.png" alt="쿤달 로고 이미지"></a></li>
-                <li><a href="#"><img src="./img/brand/brand06.png" alt="스틸라 로고 이미지"></a></li>
-                <li><a href="#"><img src="./img/brand/brand07.png" alt="어퓨 로고 이미지"></a></li>
-                <li><a href="#"><img src="./img/brand/brand08.png" alt="페리페라 로고 이미지"></a></li>
-                <li><a href="#"><img src="./img/brand/brand09.png" alt="테팔 로고 이미지"></a></li>
-                <li><a href="#"><img src="./img/brand/brand10.png" alt="하겐다즈 로고 이미지"></a></li>
-                <li><a href="#"><img src="./img/brand/brand11.png" alt="삼성 로고 이미지"></a></li>
-            </ul>
+            <div class="swiper b_name_wrap">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand01.png" alt="유닉스 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand02.png" alt="도브 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand03.png" alt="라네즈 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand04.png" alt="쿤달 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand05.png" alt="스틸라 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand06.png" alt="어퓨 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand07.png" alt="페리페라 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand08.png" alt="테팔 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand09.png" alt="하겐다즈 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand10.png" alt="삼성 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand11.png" alt="쿠첸 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="./sony.html"><img src="./img/brand/brand12.png" alt="소니 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand11.png" alt="쿠첸 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand11.png" alt="쿠첸 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand11.png" alt="쿠첸 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand11.png" alt="쿠첸 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand11.png" alt="쿠첸 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand11.png" alt="쿠첸 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand11.png" alt="쿠첸 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand11.png" alt="쿠첸 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand11.png" alt="쿠첸 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand11.png" alt="쿠첸 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand11.png" alt="쿠첸 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand11.png" alt="쿠첸 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand11.png" alt="쿠첸 로고 이미지"></a></div>
+                    <div class="swiper-slide b_name_li"><a href="#"><img src="./img/brand/brand11.png" alt="쿠첸 로고 이미지"></a></div>
+                </div>
+            </div>
+        </section>
         <section class="category_wrap">
-            <div class="c_tab_wrap">
+            <ul class="c_tab_wrap">
                 <li class="active"><a href="#">가전</a></li>
                 <li><a href="#">뷰티</a></li>
                 <li><a href="#">식품</a></li>
@@ -111,7 +130,7 @@
                 <li><a href="#">패션</a></li>
                 <li><a href="#">아동</a></li>
                 <li><a href="#">인테리어</a></li>
-            </div>
+            </ul>
         </section>
         <section class="sony_wrap container">
             <div class="title_wrap">
@@ -134,91 +153,393 @@
                         <div class="n_txt">
                             <h2>SONY LINKBUDS WF-L900</h2>
                             <p>귀에 완벽하게 맞는 형태인 인체공학적 디자인이 어우러진 LinkBuds</p>
-                            <a href="#">자세히 보기</a>
+                            <a href="./sony.html">자세히 보기</a>
                         </div>
                     </li>
                 </ul>
             </div>
             <div class="best_wrap">
                 <h1>SONY’ BEST PRODUCTS</h1>
-                <ul class="best_product_wrap">
-                    <li>
-                        <div class="b_img">
-                            <a href="#"><img src="./img/brand/sony03.png" alt="소니 상품 이미지"></a>
+                <div class="swiper best_product_wrap">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide best_product_li">
+                            <div class="b_img">
+                                <a href="#"><img src="./img/brand/sony03.png" alt="소니 상품 이미지"></a>
+                            </div>
+                            <div class="b_txt">
+                                <h2>SONY ULTWEAR YY-2981</h2>
+                                <p>259,000원</p>
+                                <a href="./sony.html" class="more_view">자세히 보기</a>
+                            </div>
                         </div>
-                        <div class="b_txt">
-                            <h2>SONY ULTWEAR YY-2981</h2>
-                            <p>259,000원</p>
-                            <a href="#" class="more_view">자세히 보기</a>
+                        <div class="swiper-slide best_product_li">
+                            <div class="b_img">
+                                <a href="#"><img src="./img/brand/sony04.png" alt="소니 상품 이미지"></a>
+                            </div>
+                            <div class="b_txt">
+                                <h2>SONY LINKBUDS-S WF-LS900N</h2>
+                                <p>249,000원</p>
+                                <a href="#" class="more_view">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide best_product_li">
+                            <div class="b_img">
+                                <a href="#"><img src="./img//brand/sony05.png" alt="소니 상품 이미지"></a>
+                            </div>
+                            <div class="b_txt">
+                                <h2>SONY FLOATRUN WI-OE610</h2>
+                                <p>169,000원</p>
+                                <a href="#" class="more_view">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide best_product_li">
+                            <div class="b_img">
+                                <a href="#"><img src="./img/brand/sony06.png" alt="소니 상품 이미지"></a>
+                            </div>
+                            <div class="b_txt">
+                                <h2>SONY CAMERA ILCE-9M3</h2>
+                                <p>7980,000원</p>
+                                <a href="#" class="more_view">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide best_product_li">
+                            <div class="b_img">
+                                <a href="#"><img src="./img/brand/sony06.png" alt="소니 상품 이미지"></a>
+                            </div>
+                            <div class="b_txt">
+                                <h2>SONY CAMERA ILCE-9M3</h2>
+                                <p>7980,000원</p>
+                                <a href="#" class="more_view">자세히 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="unix_wrap container">
+            <div class="title_wrap">
+                <h1><img src="./img/brand/ulogo.png" alt="유닉스 로고 이미지"></h1>
+                <p>당신의 일상을 함께하는 헤어기기 전문 브랜드</p>
+            </div>
+            <div class="new_wrap">
+                <ul class="new_product_wrap">
+                    <li>
+                        <a href="#"><img src="./img/brand/unix01.png" alt="유닉스 제품 이미지"></a>
+                        <div class="n_txt">
+                            <h2>UNIX AIRSHOT WRAPMOTION UN-W3970</h2>
+                            <p>바람의 차이가 곧 스타일링의 차이</p>
+                            <a href="#">자세히 보기</a>
                         </div>
                     </li>
                     <li>
-                        <div class="b_img">
-                            <a href="#"><img src="./img/brand/sony04.png" alt="소니 상품 이미지"></a>
-                        </div>
-                        <div class="b_txt">
-                            <h2>SONY LINKBUDS-S WF-LS900N</h2>
-                            <p>249,000원</p>
-                            <a href="#" class="more_view">자세히 보기</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="b_img">
-                            <a href="#"><img src="./img//brand/sony05.png" alt="소니 상품 이미지"></a>
-                        </div>
-                        <div class="b_txt">
-                            <h2>SONY FLOATRUN WI-OE610</h2>
-                            <p>169,000원</p>
-                            <a href="#" class="more_view">자세히 보기</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="b_img">
-                            <a href="#"><img src="./img/brand/sony06.png" alt="소니 상품 이미지"></a>
-                        </div>
-                        <div class="b_txt">
-                            <h2>SONY CAMERA ILCE-9M3</h2>
-                            <p>7980,000원</p>
-                            <a href="#" class="more_view">자세히 보기</a>
+                        <a href="#"><img src="./img/brand/unix02.png" alt="유닉스 제품 이미지"></a>
+
+                        <div class="n_txt">
+                            <h2>UNIX HAIRDRYER UN-A7320P</h2>
+                            <p>강력하지만 조용한 새로운 헤어드라이어의 기원</p>
+                            <a href="#">자세히 보기</a>
                         </div>
                     </li>
                 </ul>
             </div>
+            <div class="best_wrap">
+                <h1>UNIX’ BEST PRODUCTS</h1>
+                <div class="swiper best_product_wrap">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide best_product_li">
+                            <div class="b_img">
+                                <a href="#"><img src="./img/brand/unix03.png" alt="소니 상품 이미지"></a>
+                            </div>
+                            <div class="b_txt">
+                                <h2>UNIX HAIRDRYER UCI-A2410</h2>
+                                <p>119,000원</p>
+                                <a href="#" class="more_view">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide best_product_li">
+                            <div class="b_img">
+                                <a href="#"><img src="./img/brand/unix04.png" alt="소니 상품 이미지"></a>
+                            </div>
+                            <div class="b_txt">
+                                <h2>UNIX HAIRDRYER UN-1880S</h2>
+                                <p>109,000원</p>
+                                <a href="#" class="more_view">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide best_product_li">
+                            <div class="b_img">
+                                <a href="#"><img src="./img//brand/unix05.png" alt="소니 상품 이미지"></a>
+                            </div>
+                            <div class="b_txt">
+                                <h2>UNIX HAIRSTYLER UCI-A2402</h2>
+                                <p>69,000원</p>
+                                <a href="#" class="more_view">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide best_product_li">
+                            <div class="b_img">
+                                <a href="#"><img src="./img/brand/unix06.png" alt="소니 상품 이미지"></a>
+                            </div>
+                            <div class="b_txt">
+                                <h2>UNIX HAIRSTYLER UCI-A2410</h2>
+                                <p>59,000원</p>
+                                <a href="#" class="more_view">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide best_product_li">
+                            <div class="b_img">
+                                <a href="#"><img src="./img/brand/unix06.png" alt="소니 상품 이미지"></a>
+                            </div>
+                            <div class="b_txt">
+                                <h2>UNIX HAIRSTYLER UCI-A2410</h2>
+                                <p>59,000원</p>
+                                <a href="#" class="more_view">자세히 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="cuchen_wrap container">
+            <div class="title_wrap">
+                <h1><img src="./img/brand/clogo.png" alt="쿠첸 로고 이미지"></h1>
+                <p>스마트한 키친 스토리</p>
+            </div>
+            <div class="new_wrap">
+                <ul class="new_product_wrap">
+                    <li>
+                        <a href="#"><img src="./img/brand/cuchen01.png" alt="쿠첸 제품 이미지"></a>
+                        <div class="n_txt">
+                            <h2>CUCHEN RICECOOKER CRT-RPK0670W</h2>
+                            <p>하나의 밥솥, 두개의 압력 기술</p>
+                            <a href="#">자세히 보기</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/brand/cuchen02.png" alt="쿠첸 제품 이미지"></a>
+
+                        <div class="n_txt">
+                            <h2>CUCHEN AIRFRIER COV-DO50G</h2>
+                            <p>빈틈없는 고속 공기 순환 시스템과 에어프라이어의 만남</p>
+                            <a href="#">자세히 보기</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="best_wrap">
+                <h1>CUCHEN’ BEST PRODUCTS</h1>
+                <div class="swiper best_product_wrap">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide best_product_li">
+                            <div class="b_img">
+                                <a href="#"><img src="./img/brand/cuchen03.png" alt="소니 상품 이미지"></a>
+                            </div>
+                            <div class="b_txt">
+                                <h2>CUCHEN RICECOOKER CRT-UPDS1070B</h2>
+                                <p>489,000원</p>
+                                <a href="#" class="more_view">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide best_product_li">
+                            <div class="b_img">
+                                <a href="#"><img src="./img/brand/cuchen04.png" alt="소니 상품 이미지"></a>
+                            </div>
+                            <div class="b_txt">
+                                <h2>CUCHEN RICECOOKER CRT-RPK0670W</h2>
+                                <p>429,000원</p>
+                                <a href="#" class="more_view">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide best_product_li">
+                            <div class="b_img">
+                                <a href="#"><img src="./img//brand/cuchen05.png" alt="소니 상품 이미지"></a>
+                            </div>
+                            <div class="b_txt">
+                                <h2>CUCHEN AIRFRIER COV-D050G</h2>
+                                <p>99,000원</p>
+                                <a href="#" class="more_view">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide best_product_li">
+                            <div class="b_img">
+                                <a href="#"><img src="./img/brand/cuchen06.png" alt="소니 상품 이미지"></a>
+                            </div>
+                            <div class="b_txt">
+                                <h2>CUCHEN MICROWAVE CMW-N202W</h2>
+                                <p>109,000원</p>
+                                <a href="#" class="more_view">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide best_product_li">
+                            <div class="b_img">
+                                <a href="#"><img src="./img/brand/cuchen06.png" alt="소니 상품 이미지"></a>
+                            </div>
+                            <div class="b_txt">
+                                <h2>CUCHEN MICROWAVE CMW-N202W</h2>
+                                <p>109,000원</p>
+                                <a href="#" class="more_view">자세히 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="page_down">
+                <img src="./img/brand/page_down.png" alt="브랜드 페이지 펼치기">
+            </div>
         </section>
         <section class="pick_wrap">
-            <div class="title_wrap">
+            <div class="pick_title_wrap">
                 <h2>ABOUT ELECTRONICS</h2>
                 <p>토스페이가 선택한<br><span>전자제품 브랜드</span></p>
             </div>
-            <ul class="p_product_wrap">
-                <li>
-                    <a href="#"><img src="./img/brand/pick01.png" alt="소니 상품 이미지"></a>
-                    <p>크리에이터를 위한 기술로 감동을<br>선사하는 브랜드입니다.</p>
-                    <p><img src="./img/brand/company01.png" alt="소니 로고 이미지"></p> 
+            <div class="swiper pick_product_wrap">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide pick_product_li">
+                        <a href="#"><img src="./img/brand/pick01.png" alt="소니 상품 이미지"></a>
+                        <p>크리에이터를 위한 기술로 감동을<br>선사하는 브랜드입니다.</p>
+                        <p><img src="./img/brand/company01.png" alt="소니 로고 이미지"></p> 
+                    </div>
+                    <div class="swiper-slide pick_product_li">
+                        <a href="#"><img src="./img/brand/pick02.png" alt="소니 상품 이미지"></a>
+                        <p>내 공간을  나만의 갤러리로 만드는 것을<br>가능하게 하는 브랜드입니다.</p>
+                        <p><img src="./img/brand/company02.png" alt="소니 로고 이미지"></p>
+                    </div>
+                    <div class="swiper-slide pick_product_li">
+                        <a href="#"><img src="./img/brand/pick03.png" alt="소니 상품 이미지"></a>
+                        <p>오랜연구기술을 활용하여<br>건강트렌드를 이끌어가는 브랜드입니다.</p>
+                        <p><img src="./img/brand/company03.png" alt="소니 로고 이미지"></p>
+                    </div>
+                    <div class="swiper-slide pick_product_li">
+                        <a href="#"><img src="./img/brand/pick04.png" alt="소니 상품 이미지"></a>
+                        <p>세계적인 드론 전문 브랜드로서<br>모든 모험을 담아주는 브랜드입니다.</p>
+                        <p><img src="./img/brand/company04.png" alt="소니 로고 이미지"></p>
+                    </div>
+                    <div class="swiper-slide pick_product_li">
+                        <a href="#"><img src="./img/brand/pick05.png" alt="소니 상품 이미지"></a>
+                        <p>크리에이터를 위한 기술로 감동을<br>선사하는 브랜드입니다.</p>
+                        <p><img src="./img/brand/company05.png" alt="소니 로고 이미지"></p>
+                    </div>
+                    <div class="swiper-slide pick_product_li">
+                        <a href="#"><img src="./img/brand/pick05.png" alt="소니 상품 이미지"></a>
+                        <p>크리에이터를 위한 기술로 감동을<br>선사하는 브랜드입니다.</p>
+                        <p><img src="./img/brand/company05.png" alt="소니 로고 이미지"></p>
+                    </div>
+                    <div class="swiper-slide pick_product_li">
+                        <a href="#"><img src="./img/brand/pick05.png" alt="소니 상품 이미지"></a>
+                        <p>크리에이터를 위한 기술로 감동을<br>선사하는 브랜드입니다.</p>
+                        <p><img src="./img/brand/company05.png" alt="소니 로고 이미지"></p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section class="event">
+            <ul class="card">
+                <li class="free">
+                    <h1>무료배송</h1>
+                    <p>토스페이에서는 전제품을<br>무료배송으로 보내드려요</p>
                 </li>
-                <li>
-                    <a href="#"><img src="./img/brand/pick02.png" alt="소니 상품 이미지"></a>
-                    <p>크리에이터를 위한 기술로 감동을<br>선사하는 브랜드입니다.</p>
-                    <p><img src="./img/brand/company02.png" alt="소니 로고 이미지"></p>
+                <li class="coupon">
+                    <img src="./img/coupon.png" alt="">
+                    <h1>토스쇼핑 1000원 쿠폰</h1>
+                    <p>지금 바로 사용 가능한<br>1000원 쿠폰을 전고객님께 드려요</p>
                 </li>
-                <li>
-                    <a href="#"><img src="./img/brand/pick03.png" alt="소니 상품 이미지"></a>
-                    <p>크리에이터를 위한 기술로 감동을<br>선사하는 브랜드입니다.</p>
-                    <p><img src="./img/brand/company03.png" alt="소니 로고 이미지"></p>
+                <li class="alipay">
+                    <img src="./img/pay.png" alt="토스페이 알리페이 이미지">
+                    <h1>해외결제</h1>
+                    <p>전세계 49개 나라에서<br>편하게 쓸 수 있어요</p>
                 </li>
-                <li>
-                    <a href="#"><img src="./img/brand/pick04.png" alt="소니 상품 이미지"></a>
-                    <p>크리에이터를 위한 기술로 감동을<br>선사하는 브랜드입니다.</p>
-                    <p><img src="./img/brand/company04.png" alt="소니 로고 이미지"></p>
+                <li class="prime">
+                    <!-- <img src="./img/prime.png" alt="토스프라임 이미지"> -->
                 </li>
-                <li>
-                    <a href="#"><img src="./img/brand/pick05.png" alt="소니 상품 이미지"></a>
-                    <p>크리에이터를 위한 기술로 감동을<br>선사하는 브랜드입니다.</p>
-                    <p><img src="./img/brand/company05.png" alt="소니 로고 이미지"></p>
-                </li>
-            </ul> 
+            </ul>
+            <img src="./img/logo02.png" alt="토스페이 로고 이미지">
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="f_top">
+            <div class="f_top_left">
+                <ul class="category">
+                            <li class="title"><a href="#">CATEGORY</a></li>
+                            <li><a href="#">뷰티</a></li>
+                            <li><a href="#">패션</a></li>
+                            <li><a href="#">식품</a></li>
+                            <li><a href="#">도서</a></li>
+                            <li><a href="#">인테리어</a></li>
+                            <li><a href="#">전자제품</a></li>
+                            <li><a href="#">출산 · 육아</a></li>
+                            <li><a href="#">여행 · 취미</a></li>
+                </ul>
+                <ul class="brands">
+                    <li class="title"><a href="#">BRANDS</a></li>
+                    <li><a href="#">애플공식대리점</a></li>
+                    <li><a href="#">가전</a></li>
+                    <li><a href="#">뷰티</a></li>
+                    <li><a href="#">식품</a></li>
+                    <li><a href="#">생활</a></li>
+                    <li><a href="#">패션</a></li>
+                    <li><a href="#">아동</a></li>
+                    <li><a href="#">인테리어</a></li>
+                </ul><a href="#"></a>
+                <ul class="toss">
+                    <li class="title"><a href="#">TOSS</a></li>
+                    <li><a href="#">토스뱅크</a></li>
+                    <li><a href="#">토스증권</a></li>
+                    <li><a href="#">토스인슈어런스</a></li>
+                    <li><a href="#">토스페어런츠</a></li>
+                    <li><a href="#">토스씨엑스</a></li>
+                    <li><a href="#">토스플레이스</a></li>
+                </ul>
+            </div>
+            <div class="f_top_right">
+                <ul class="info">
+                    <li class="title"><a href="#">INFORMATION</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">1:1문의</a></li>
+                    <li><a href="#">자주하는 질문</a></li>
+                    <li><a href="#">토스페이 이용 안내</a></li>
+                    <li><a href="#">토스프라임 가입 안내</a></li>
+                    <li><a href="#">해외 결제 이용 안내</a></li>
+                </ul>
+                <ul class="privacy">
+                    <li class="title"><a href="#">PRIVACY</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">서비스이용약관</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="f_bottom">
+            <div class="f_bottom_left">
+                <ul class="contact">
+                    <li class="title">CONTACT</li>
+                    <li>상호  주식회사 비바리퍼블리카  |  호스팅 서비스  주식회사 비바리퍼블리카
+                        |  대표자  이승건
+                        사업장<br> 
+                        주소  서울특별시 강남구 테헤란로 142, 12층
+                        | 전화번호  1599-4905  |  이메일  support@toss.im<br>
+                        사업자 등록번호  120-88-01280  |  통신판매업 신고번호  2014-서울강남-03377</li>
+                </ul>
+            </div>
+            <div class="f_bottom_right">
+                <ul class="customer">
+                    <li class="title">CUSTOMER</li>
+                    <li>전화번호  1599-4905<br> 
+                        이메일  support@toss.im<br>
+                        고객문의센터  서울특별시 강남구 테헤란로133, 9층</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
 </body>
 </html>

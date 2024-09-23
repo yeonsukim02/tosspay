@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sony</title>
+    <title>sony | tosspay mall</title>
     <!-- font -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactuspretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1300..900&display=swap" rel="stylesheet">
@@ -14,15 +14,16 @@
     <!-- 플러그인 필수 JS cdn 연결 -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- css -->
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/brand.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <!-- 제이쿼리 라이브러리 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./script/common.js" defer></script>
-    <script src="./script/main.js" defer></script>
     <script src="./script/sony.js" defer></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sony.css">
+    <link rel="stylesheet" href="./css/common_sub.css">
 </head>
 <body>
     <header>
@@ -41,13 +42,13 @@
                 </li>
                 <li><a href="#">브랜드관</a>
                     <ul class="sub">
-                        <li><a href="#">가전</a></li>
-                        <li><a href="#">뷰티</a></li>
-                        <li><a href="#">식품</a></li>
-                        <li><a href="#">생활</a></li>
-                        <li><a href="#">패션</a></li>
-                        <li><a href="#">아동</a></li>
-                        <li><a href="#">인테리어</a></li>
+                        <li><a href="./brand.html">가전</a></li>
+                        <li><a href="./brand.html">뷰티</a></li>
+                        <li><a href="./brand.html">식품</a></li>
+                        <li><a href="./brand.html">생활</a></li>
+                        <li><a href="./brand.html">패션</a></li>
+                        <li><a href="./brand.html">아동</a></li>
+                        <li><a href="./brand.html">인테리어</a></li>
                     </ul>
                 </li>
                 <li><a href="#">카테고리</a>
@@ -74,15 +75,21 @@
             <div class="sub_bg"></div>
         </nav>
         <div class="lnb">
-            <a href="#"><img src="./img/lnb01.png" alt="검색하기"></a>
-            <a href="#"><img src="./img/lnb02.png" alt="로그인"></a>
-            <a href="#"><img src="./img/lnb03.png" alt="장바구니"></a>
+            <a href="#"><img src="./img/sony/lnb01_black.png" alt="검색하기"></a>
+            <a href="#"><img src="./img/sony/lnb02_black.png" alt="로그인"></a>
+            <a href="#"><img src="./img/sony/lnb03_black.png" alt="장바구니"></a>
         </div>
     </header>
     <main>
-        <section class="product_wrap">
-            <div class="product_img_wrap"><!-- 스와이퍼 -->
-                <img src="./img/sony/main.png" alt="소니 헤드폰 이미지">
+        <section class="product_wrap"><!-- 스와이퍼 -->
+            <div class="swiper product_color_wrap">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide product_color_li"><img src="./img/sony/main01.png" alt="소니 헤드폰 이미지"></div>
+                    <div class="swiper-slide product_color_li"><img src="./img/sony/main02.png" alt="소니 헤드폰 이미지"></div>
+                    <div class="swiper-slide product_color_li"><img src="./img/sony/main03.png" alt="소니 헤드폰 이미지"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
             <form id="product_detail_wrap" name="product_detail_wrap" method="get">
                 <div class="p_name">
@@ -128,47 +135,57 @@
                             <a href="#"><img src="./img/sony/shoppingbag.png " alt="장바구니 담기"></a>
                             <a href="#"><img src="./img/sony/present.png " alt="선물하기"></a>
                         </div>
-                        <a class="btn_buy" href="#">바로 구매하기</a>
+                        <a href="#" class="btn_buy">바로 구매하기</a>
                     </div>
                 </div>
             </form>
         </section>
         <section class="recommend_wrap"><!-- 스와이퍼 -->
             <h1>함께 구매하시면 좋은 추천 제품</h1>
-            <ul class="r_product_wrap">
-                <li>
-                    <a href="#"><img src="./img/sony/product01.png" alt="소니 상품 이미지"></a>
-                    <div class="r_txt">
-                        <h2>INZONE Buds</h2>
-                        <p class="info">게이머를 위한 완벽한 이어폰</p>
-                        <p class="price">259,000원</p>
+            <div class="swiper r_product_wrap">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide r_product_li">
+                        <a href="#"><img src="./img/sony/product01.png" alt="소니 상품 이미지"></a>
+                        <div class="r_txt">
+                            <h2>INZONE Buds</h2>
+                            <p class="info">게이머를 위한 완벽한 이어폰</p>
+                            <p class="price">259,000원</p>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <a href="#"><img src="./img/sony/product02.png" alt="소니 상품 이미지"></a>
-                    <div class="r_txt">
-                        <h2>INZONE Buds</h2> 
-                        <p class="info">게이머를 위한 완벽한 이어폰</p>
-                        <p class="price">259,000원</p>
+                    <div class="swiper-slide r_product_li">
+                        <a href="#"><img src="./img/sony/product02.png" alt="소니 상품 이미지"></a>
+                        <div class="r_txt">
+                            <h2>INZONE Buds</h2> 
+                            <p class="info">게이머를 위한 완벽한 이어폰</p>
+                            <p class="price">259,000원</p>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <a href="#"><img src="./img/sony/product03.png" alt="소니 상품 이미지"></a>
-                    <div class="r_txt">
-                        <h2>INZONE Buds</h2> 
-                        <p class="info">게이머를 위한 완벽한 이어폰</p>
-                        <p class="price">259,000원</p>
+                    <div class="swiper-slide r_product_li">
+                        <a href="#"><img src="./img/sony/product03.png" alt="소니 상품 이미지"></a>
+                        <div class="r_txt">
+                            <h2>INZONE Buds</h2> 
+                            <p class="info">게이머를 위한 완벽한 이어폰</p>
+                            <p class="price">259,000원</p>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <a href="#"><img src="./img/sony/product04.png" alt="소니 상품 이미지"></a>
-                    <div class="r_txt">
-                        <h2>INZONE Buds</h2> 
-                        <p class="info">게이머를 위한 완벽한 이어폰</p>
-                        <p class="price">259,000원</p>
+                    <div class="swiper-slide r_product_li">
+                        <a href="#"><img src="./img/sony/product04.png" alt="소니 상품 이미지"></a>
+                        <div class="r_txt">
+                            <h2>INZONE Buds</h2> 
+                            <p class="info">게이머를 위한 완벽한 이어폰</p>
+                            <p class="price">259,000원</p>
+                        </div>
                     </div>
-                </li>
-            </ul>
+                    <div class="swiper-slide r_product_li">
+                        <a href="#"><img src="./img/sony/product04.png" alt="소니 상품 이미지"></a>
+                        <div class="r_txt">
+                            <h2>INZONE Buds</h2> 
+                            <p class="info">게이머를 위한 완벽한 이어폰</p>
+                            <p class="price">259,000원</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="detail_page_wrap">
             <img src="./img/sony/detail_page.png" alt="소니 상세 페이지">
@@ -177,7 +194,7 @@
         <section class="banner_wrap">
 
         </section>
-        <section class="spec_wrap">
+<!--         <section class="spec_wrap">
             <ul class="s_spec_wrap">
                 <li>
                     <img src="./img/sony/spec01.png" alt="">
@@ -243,119 +260,162 @@
                     <h2>헤드폰 케이블</h2>
                 </li>
             </ul>
-        </section>
+        </section> -->
         <!-- 생략 -->
         <section class="video_wrap">
             <h2>SONY PRODUCT VIDEO</h2>
-            <iframe class="videon" src="https://www.youtube.com/embed/fROmO9sy3DU?si=IDwNSkyC9gE9eNOt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <video controls autoplay muted>
+                <source src="./img/sony/video.mp4" type="video/mp4">
+            </video>
+<!--             <iframe class="video" src="https://www.youtube.com/embed/fROmO9sy3DU?si=IDwNSkyC9gE9eNOt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
         </section>
         <section class="story_wrap"><!-- 스와이퍼 -->
-            <div class="s_title">
+            <div class="s_story_all">
+                            <div class="s_title_wrap">
                 <h1>SONY STORY</h1>
-                <p><a href="#">VIEW MORE<!-- 백그라운드 이미지, 화살표 --></a></p>
+                <p><a href="#">
+                    VIEW MORE
+                    <!-- <img src="./img/sony/arrow_next.png" alt=""> -->
+                </a></p>
             </div>
-            <ul class="s_story_wrap">
-                <li>
-                    <a href="#"><img src="./img/sony/story01.png" alt=""></a>
-                    <p class="s_txt">
-                        <h2>뉴 라이프 스타일에 딱 맞춘 소니</h2>
-                        <p>새로운 세대와 새로운 라이프 스타일에 맞춰 소니는 끊임없<br>이 발전해요.</p>
-                    </p>
+                <div class="swiper s_story_wrap">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide s_story_li">
+                            <a href="#"><img src="./img/sony/story01.png" alt=""></a>
+                            <div class="s_txt">
+                                <h2>뉴 라이프 스타일에 딱 맞춘 소니</h2>
+                                <p>새로운 세대와 새로운 라이프 스타일에 맞춰 소니는 끊임없이 발전해요.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide s_story_li">
+                            <a href="#"><img src="./img/sony/story02.png" alt=""></a>
+                            <div class="s_txt">
+                                <h2>내 몸에 맞춘 듯한 슬림핏 디자인</h2>
+                                <p>당신의 일상, 소니 얼트퉤어 헤드폰과 함께</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide s_story_li">
+                            <a href="#"><img src="./img/sony/story03.png" alt=""></a>
+                            <div class="s_txt">
+                                <h2>제품의 사용과 함께  발전하는 내 역량</h2>
+                                <p>새롭게 출시된 소니의 제품들로 창조해내고 싶었던 것들을 마음껏 구현해 보세요. </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide s_story_li">
+                            <a href="#"><img src="./img/sony/story03.png" alt=""></a>
+                            <div class="s_txt">
+                                <h2>제품의 사용과 함께  발전하는 내 역량</h2>
+                                <p>새롭게 출시된 소니의 제품들로 창조해내고 싶었던 것들을 마음껏 구현해 보세요. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sony_link">
+                <a href="https://www.sony.co.kr/" class="sony_link">
+                    SONY 홈페이지 바로가기
+                    <img src="./img/sony/arrow_next_black.png" alt="">
+                </a>
+            </div>
+        </section>
+        <section class="event">
+            <ul class="card">
+                <li class="free">
+                    <h1>무료배송</h1>
+                    <p>토스페이에서는 전제품을<br>무료배송으로 보내드려요</p>
                 </li>
-                <li>
-                    <a href="#"><img src="./img/sony/story02.png" alt=""></a>
-                    <p class="s_txt">
-                        <h2>내 몸에 맞춘 듯한 슬림핏 디자인</h2>
-                        <p>당신의 일상, 소니 얼트퉤어 헤드폰과 함께</p>
-                    </p>
+                <li class="coupon">
+                    <img src="./img/coupon.png" alt="">
+                    <h1>토스쇼핑 1000원 쿠폰</h1>
+                    <p>지금 바로 사용 가능한<br>1000원 쿠폰을 전고객님께 드려요</p>
                 </li>
-                <li>
-                    <a href="#"><img src="./img/sony/story03.png" alt=""></a>
-                    <p class="s_txt">
-                        <h2>제품의 사용과 함께  발전하는 내 역량</h2>
-                        <p>새롭게 출시된 소니의 제품들로 창조해내고 싶었던 것들을<br>마음껏 구현해 보세요. </p>
-                    </p>
+                <li class="alipay">
+                    <img src="./img/pay.png" alt="토스페이 알리페이 이미지">
+                    <h1>해외결제</h1>
+                    <p>전세계 49개 나라에서<br>편하게 쓸 수 있어요</p>
+                </li>
+                <li class="prime">
+                    <!-- <img src="./img/prime.png" alt="토스프라임 이미지"> -->
                 </li>
             </ul>
-            <a href="https://www.sony.co.kr/" class="sony_link">SONY 홈페이지 바로가기<!-- 백그라운드 이미지, 화살표 --></a>
+            <img src="./img/logo02.png" alt="토스페이 로고 이미지">
         </section>
     </main>
     <footer>
         <div class="f_top">
             <div class="f_top_left">
                 <ul class="category">
-                            <li class="title">CATEGORY</li>
-                            <li>뷰티</li>
-                            <li>패션</li>
-                            <li>식품</li>
-                            <li>도서</li>
-                            <li>인테리어</li>
-                            <li>전자제품</li>
-                            <li>출산 · 육아</li>
-                            <li>여행 · 취미</li>
+                            <li class="title"><a href="#">CATEGORY</a></li>
+                            <li><a href="#">뷰티</a></li>
+                            <li><a href="#">패션</a></li>
+                            <li><a href="#">식품</a></li>
+                            <li><a href="#">도서</a></li>
+                            <li><a href="#">인테리어</a></li>
+                            <li><a href="#">전자제품</a></li>
+                            <li><a href="#">출산 · 육아</a></li>
+                            <li><a href="#">여행 · 취미</a></li>
                 </ul>
                 <ul class="brands">
-                    <li class="title">BRANDS</li>
-                    <li>애플공식대리점</li>
-                    <li>가전</li>
-                    <li>뷰티</li>
-                    <li>식품</li>
-                    <li>생활</li>
-                    <li>패션</li>
-                    <li>아동</li>
-                    <li>인테리어</li>
-                </ul>
+                    <li class="title"><a href="#">BRANDS</a></li>
+                    <li><a href="#">애플공식대리점</a></li>
+                    <li><a href="#">가전</a></li>
+                    <li><a href="#">뷰티</a></li>
+                    <li><a href="#">식품</a></li>
+                    <li><a href="#">생활</a></li>
+                    <li><a href="#">패션</a></li>
+                    <li><a href="#">아동</a></li>
+                    <li><a href="#">인테리어</a></li>
+                </ul><a href="#"></a>
                 <ul class="toss">
-                    <li class="title">TOSS</li>
-                    <li>토스뱅크</li>
-                    <li>토스증권</li>
-                    <li>토스인슈어런스</li>
-                    <li>토스페어런츠</li>
-                    <li>토스씨엑스</li>
-                    <li>토스플레이스</li>
+                    <li class="title"><a href="#">TOSS</a></li>
+                    <li><a href="#">토스뱅크</a></li>
+                    <li><a href="#">토스증권</a></li>
+                    <li><a href="#">토스인슈어런스</a></li>
+                    <li><a href="#">토스페어런츠</a></li>
+                    <li><a href="#">토스씨엑스</a></li>
+                    <li><a href="#">토스플레이스</a></li>
                 </ul>
             </div>
             <div class="f_top_right">
                 <ul class="info">
-                    <li class="title">INFORMATION</li>
-                    <li>공지사항</li>
-                    <li>1:1문의</li>
-                    <li>자주하는 질문</li>
-                    <li>토스페이 이용 안내</li>
-                    <li>토스프라임 가입 안내</li>
-                    <li>해외 결제 이용 안내</li>
+                    <li class="title"><a href="#">INFORMATION</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">1:1문의</a></li>
+                    <li><a href="#">자주하는 질문</a></li>
+                    <li><a href="#">토스페이 이용 안내</a></li>
+                    <li><a href="#">토스프라임 가입 안내</a></li>
+                    <li><a href="#">해외 결제 이용 안내</a></li>
                 </ul>
                 <ul class="privacy">
-                    <li class="title">PRIVACY</li>
-                    <li>이용약관</li>
-                    <li>개인정보처리방침</li>
-                    <li>서비스이용약관</li>
-                    <li>사업자정보확인</li>
+                    <li class="title"><a href="#">PRIVACY</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">서비스이용약관</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
                 </ul>
             </div>
         </div>
         <div class="f_bottom">
-                <div class="f_bottom">
-                    <div class="f_bottom_left">
-                        <ul class="contact">
-                            <li>CONTACT</li>
-                            <li>상호  주식회사 비바리퍼블리카  |  호스팅 서비스  주식회사 비바리퍼블리카
-                                |  대표자  이승건
-                                사업장<br> 
-                                주소  서울특별시 강남구 테헤란로 142, 12층
-                                | 전화번호  1599-4905  |  이메일  support@toss.im<br>
-                                사업자 등록번호  120-88-01280  |  통신판매업 신고번호  2014-서울강남-03377</li>
-                        </ul>
-                    </div>
-                    <div class="f_bottom_right">
-                        <ul class="customer">
-                            <li>CUSTOMER</li>
-                            <li>전화번호  1599-4905<br> 
-                                이메일  support@toss.im<br>
-                                고객문의센터  서울특별시 강남구 테헤란로133, 9층</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="f_bottom_left">
+                <ul class="contact">
+                    <li class="title">CONTACT</li>
+                    <li>상호  주식회사 비바리퍼블리카  |  호스팅 서비스  주식회사 비바리퍼블리카
+                        |  대표자  이승건
+                        사업장<br> 
+                        주소  서울특별시 강남구 테헤란로 142, 12층
+                        | 전화번호  1599-4905  |  이메일  support@toss.im<br>
+                        사업자 등록번호  120-88-01280  |  통신판매업 신고번호  2014-서울강남-03377</li>
+                </ul>
+            </div>
+            <div class="f_bottom_right">
+                <ul class="customer">
+                    <li class="title">CUSTOMER</li>
+                    <li>전화번호  1599-4905<br> 
+                        이메일  support@toss.im<br>
+                        고객문의센터  서울특별시 강남구 테헤란로133, 9층</li>
+                </ul>
+            </div>
+        </div>
         </div>
     </footer>
 </body>
