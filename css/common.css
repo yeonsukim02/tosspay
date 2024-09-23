@@ -49,3 +49,129 @@ header .lnb > a{
 }
 header .lnb > a:last-child{margin-right: 0;}
 header .lnb a > img{width: 100%;}
+
+main .event{
+    background-color: #000;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+main .event .card{
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+}
+main .event .card li{
+    width: 320px; height: 280px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 16px;
+    text-align: center;
+}
+main .event .card li img{}
+main .event .card li h1{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.38rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+main .event .card li p{}
+main .event .card .free{
+    padding-top: 60px;
+    background-color: #0064FF;
+}
+main .event .card .free h1{
+    color: #fff;
+}
+main .event .card .free p{
+    color: #fff;
+}
+main .event .card .coupon{
+    padding-top: 30px;
+}
+main .event .card .alipay{
+    padding-top: 30px;
+}
+main .event .card .prime{
+    background: url(../img/prime.png) no-repeat;            
+}
+main .event > img{
+    /* background-color: aqua; */
+    margin-top: 125px;
+}
+
+
+footer{}
+footer .f_top{
+    padding: 50px 260px 90px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #292929;
+}
+/* 공통 */
+footer .f_top ul{
+    margin-right: 120px;
+}
+footer .f_top ul:last-child{margin-right: 0;}
+footer .f_top ul li{
+    margin-bottom: 15px;
+}
+footer .f_top ul li a{
+    font-size: 1.13rem;
+    font-weight: 300;
+    color: #fff;
+}
+footer .f_top ul .title{margin-bottom: 30px;}
+footer .f_top ul .title a{
+    font-size: 1.13rem;
+    font-weight: 600;
+}
+footer .f_top .f_top_left{display: flex;}
+footer .f_top .f_top_left ul{}
+footer .f_top .f_top_left ul li{}
+footer .f_top .f_top_left .category{}
+footer .f_top .f_top_left .category li{}
+footer .f_top .f_top_left .category .title{}
+footer .f_top .f_top_left .brands{}
+footer .f_top .f_top_left .brands li{}
+footer .f_top .f_top_left .brands .title{}
+footer .f_top .f_top_left .toss{}
+footer .f_top .f_top_left .toss li{}
+footer .f_top .f_top_left .toss .title{}
+footer .f_top_right{display: flex;}
+footer .f_top_right ul{}
+footer .f_top_right ul li{}
+footer .f_top .f_top_left .info{}
+footer .f_top .f_top_left .info li{}
+footer .f_top .f_top_left .info .title{}
+footer .f_top .f_top_left .privacy{}
+footer .f_top .f_top_left .privacy li{}
+footer .f_top .f_top_left .privacy .title{}
+
+footer .f_bottom{
+    padding: 140px 260px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+}
+/* 공통 */
+footer .f_bottom{}
+footer .f_bottom ul{}
+footer .f_bottom ul li{
+    color: #fff;
+    margin-bottom: ;
+    font-size: 1.13rem;
+    line-height: 200%;
+}
+footer .f_bottom ul .title{
+    margin-bottom: 20px;
+    font-size: 1.13rem;
+    font-weight: 300;
+}
+footer .f_bottom .f_bottom_left{}
+footer .f_bottom .f_bottom_left .contact{}
+footer .f_bottom .f_bottom_left .contact li{}
+footer .f_bottom .f_bottom_right{}
+footer .f_bottom .f_bottom_right .customer{}
+footer .f_bottom .f_bottom_right .customer li{}

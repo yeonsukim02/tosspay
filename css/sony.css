@@ -1,0 +1,272 @@
+main .product_wrap{
+    display: flex;
+    padding-top: 80px;
+}
+main .product_wrap .product_color_wrap{width: 50%;}
+main .product_wrap .product_color_wrap .product_color_li{width: 960px; height: 700px;}
+main .product_wrap .product_color_wrap .product_color_li img{}
+main .product_color_wrap .swiper-button-next,
+main .product_color_wrap .swiper-button-prev {
+    color: #898989;
+}
+main .product_wrap form{}
+main .product_wrap #product_detail_wrap{
+    background-color: #F8F8F8;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 66px 214px;
+}
+main .product_wrap #product_detail_wrap .p_name{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d9d9d9;
+}
+main .product_wrap #product_detail_wrap .p_name h1{
+    font-size: 3.0rem;
+    font-weight: 700;
+}
+main .product_wrap #product_detail_wrap .p_name p{
+    margin-top: 15px;
+    font-size: 1.13rem;
+}
+main .product_wrap #product_detail_wrap .p_name .price_delivery_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 15px;
+}
+main .product_wrap #product_detail_wrap .p_name .price_delivery_wrap .price_wrap{
+    display: flex;
+    align-items: end;
+}
+main .product_wrap #product_detail_wrap .p_name .price_delivery_wrap .price_wrap .price{
+    font-size: 1.25rem;
+}
+main .product_wrap #product_detail_wrap .p_name .price_delivery_wrap .price_wrap .price strong{
+    font-size: 1.88rem;
+    font-weight: 700;
+}
+main .product_wrap #product_detail_wrap .p_name .price_delivery_wrap .price_wrap del{
+    font-size: 1.13rem;
+    font-weight: 300;
+    padding: 0 10px;
+}
+main .product_wrap #product_detail_wrap .p_name .price_delivery_wrap .price_wrap em{
+    color: #0064FF;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+main .product_wrap #product_detail_wrap .p_name p{
+    font-weight: 500;
+    color: #0064FF;
+}
+main .product_wrap #product_detail_wrap .p_color{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 30px;
+    border-bottom: 1px solid #d9d9d9;
+}
+/* 공통 */
+main .product_wrap #product_detail_wrap h2{
+    font-size: 1.13rem;
+    font-weight: 700;
+}
+main .product_wrap #product_detail_wrap .p_color .color_wrap{margin-top: 20px;}
+main .product_wrap #product_detail_wrap .p_color .color_wrap a{
+    display: inline-block;
+    width: 45px; height: 45px;
+    border-radius: 50%;
+    background-color: black;
+}
+main .product_wrap #product_detail_wrap .p_color .color_wrap a span{
+    font-size: 0;
+}
+main .product_wrap #product_detail_wrap .p_color .color_wrap .blue{background-color: #384556;}
+main .product_wrap #product_detail_wrap .p_color .color_wrap .blue span{}
+main .product_wrap #product_detail_wrap .p_color .color_wrap .silver{background-color: #E4DED7; margin: 0 10px;}
+main .product_wrap #product_detail_wrap .p_color .color_wrap .silver span{}
+main .product_wrap #product_detail_wrap .p_color .color_wrap .black{}
+main .product_wrap #product_detail_wrap .p_color .color_wrap .black span{}
+main .product_wrap #product_detail_wrap .p_select{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 30px;
+    border-bottom: 1px solid #d9d9d9;
+}
+main .product_wrap #product_detail_wrap .p_select h2{}
+main .product_wrap #product_detail_wrap .p_select #select_group{
+    margin-top: 20px;
+    width: 520px;
+    padding: 10px 0;
+}
+main .product_wrap #product_detail_wrap .p_select #select_group option{}
+main .product_wrap #product_detail_wrap .p_total{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+main .product_wrap #product_detail_wrap .p_total .total_wrap{display: flex;}
+main .product_wrap #product_detail_wrap .p_total .total_wrap .total_group strong{
+    font-size: 1.13rem;
+    font-weight: 700;
+}
+main .product_wrap #product_detail_wrap .p_total .total_wrap .total_group span{}
+main .product_wrap #product_detail_wrap .p_total .total_wrap .total_group .total_number_wrap{
+    font-size: 0.88rem;
+    margin-left: 10px;
+}
+main .product_wrap #product_detail_wrap .p_total .total_wrap .total_number_wrap .total_number{}/* - */
+main .product_wrap #product_detail_wrap .p_total .total_wrap .total_price_wrap{
+    font-size: 1.38rem;
+    font-weight: 700;
+    margin-left: 345px;
+}
+main .product_wrap #product_detail_wrap .p_total .total_wrap .total_price_wrap .total_price{}/* - */
+main .product_wrap #product_detail_wrap .p_total .btn_wrap{
+    display: flex;
+    margin-top: 30px;
+}
+main .product_wrap #product_detail_wrap .p_total .btn_wrap .btn_icon{}
+main .product_wrap #product_detail_wrap .p_total .btn_wrap .btn_icon a{
+    margin-right: 10px;
+    width: 45px; height: 45px;
+    border: 1px solid #898989;
+    
+}
+main .product_wrap #product_detail_wrap .p_total .btn_wrap .btn_icon a img{}
+main .product_wrap #product_detail_wrap .p_total .btn_wrap .btn_buy{
+    margin-left: 45px;
+    padding: 15px 125px;
+    background-color: black;
+    color: #fff;
+}
+/* 추천 섹션 */
+main .recommend_wrap{
+    padding: 150px 0;
+}
+main .recommend_wrap h1{
+    font-size: 2.0rem;
+    font-weight: 500;
+    text-align: center;
+}
+main .recommend_wrap .r_product_wrap{
+    padding-top: 100px;
+}
+main .recommend_wrap .r_product_wrap .r_product_li{}
+main .recommend_wrap .r_product_wrap .r_product_li a{
+}
+main .recommend_wrap .r_product_wrap .r_product_li a img{
+    background-color: #F3FCFF;
+}
+main .recommend_wrap .r_product_wrap .r_product_li .r_txt{
+    padding-top: 20px;
+}
+main .recommend_wrap .r_product_wrap .r_product_li .r_txt h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+main .recommend_wrap .r_product_wrap .r_product_li .r_txt p{}
+main .recommend_wrap .r_product_wrap .r_product_li .r_txt .info{
+    padding: 20px 0;
+    font-size: 1.13rem;
+}
+main .recommend_wrap .r_product_wrap .r_product_li .r_txt .price{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+/* 디테일페이지 섹션 */
+/* 비디오 섹션 */
+main .video_wrap{
+    margin-top: 200px;
+}
+main .video_wrap h2{
+    font-size: 2.0rem;
+    font-weight: 500;
+    text-align: center;
+}
+main .video_wrap video{
+    padding: 0 260px;
+    background-color: #000000;
+    margin-top: 100px;
+    width: 100%;
+}
+main .video_wrap video source{
+
+}
+/* 스토리 섹션 */
+main .story_wrap{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+main .story_wrap .s_story_all{
+    display: flex;
+    padding: 0 150px;
+}
+main .story_wrap .s_story_all .s_title_wrap{
+    width: 25%;
+    /* background-color: red; */
+}
+main .story_wrap .s_story_all .s_title_wrap h1{
+    font-size: 1.88rem;
+    font-weight: 500;
+}
+main .story_wrap .s_story_all .s_title_wrap p{
+    /* background-color: red; */
+    display: flex;
+    padding-top: 50px;
+}
+main .story_wrap .s_story_all .s_title_wrap p a{
+    background: url(../img/sony/arrow_next_blue.png) no-repeat 100px center;
+    color: #0064FF;
+    font-size: 1.13rem;
+    padding-right: 20px;
+}
+/* main .story_wrap .s_title p a img{
+    position: relative;
+    top: 50%; transform: translateY(-50%);
+}
+ */
+main .story_wrap .s_story_all .s_story_wrap{
+    
+}
+main .story_wrap .s_story_all .s_story_wrap .s_story_li{
+    width: 45%;
+    /* background-color: aqua; */
+}
+main .story_wrap .s_story_all .s_story_wrap .s_story_li a{
+    width: 100%;
+}
+main .story_wrap .s_story_all .s_story_wrap .s_story_li a img{
+    width: 100%;
+}
+main .story_wrap .s_story_all .s_story_wrap .s_story_li .s_txt{
+    width: 100%;
+}
+main .story_wrap .s_story_all .s_story_wrap .s_story_li .s_txt h2{
+    font-size: 1.13rem;
+    font-weight: 700;
+    /* background-color: red; */
+}
+main .story_wrap .s_story_all .s_story_wrap .s_story_li .s_txt p{
+    padding-top: 15px;
+    font-size: 1.13rem;
+    line-height: 140%;
+    /* background-color: yellow; */
+}
+main .story_wrap .sony_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0 125px;
+    /* background-color: red; */
+}
+main .story_wrap .sony_link a{
+    font-size: 2.0rem;
+    font-weight: 500;
+}
+main .story_wrap .sony_link img{
+    padding-left: 20px;
+}

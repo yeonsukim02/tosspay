@@ -1,5 +1,5 @@
 main .visual{
-    background: url(../img/brand/main.png);
+    /* background: url(../img/brand/main.png) no-repeat; */
     position: relative;
     height: 700px;
     overflow: hidden;
@@ -7,9 +7,10 @@ main .visual{
 main .visual img{
     width: 100%;
 }
+
 main .visual .txt{
     position: absolute;
-    left: 260px; bottom: 100px;
+    left: 260px; top: 340px;
 }
 main .visual .txt h1{
     font-size: 2.22rem;
@@ -23,7 +24,7 @@ main .visual .txt p{
     padding-bottom: 60px;
     color: #fff;
     font-family: "Red Hat Display", sans-serif;
-    line-height: 60%;
+    line-height: 140%;
 }
 main .visual .txt a{
     color: #fff;
@@ -31,7 +32,206 @@ main .visual .txt a{
     font-size: 0.89rem;
     border: 1px solid #fff;
     border-radius: 10px;
-    border-radius: 30px;
+    border-radius: 30px;/*  */
     padding: 15px;
     background-color: transparent;
 }
+/* 브랜드 섹션 */
+.brand_wrap{padding-top: 100px;}
+/* 카테고리 섹션 */
+.category_wrap{padding-top: 200px;}
+.category_wrap .c_tab_wrap{
+    display: flex;
+    justify-items: center;
+    margin: 0 260px;
+    background-color: #fff;
+}
+.category_wrap .c_tab_wrap li{
+    width: 20%; text-align: center;
+    line-height: 39px;
+    border: 1px solid #eee;
+}
+.category_wrap .c_tab_wrap li:last-child{
+    border-top-right-radius: 20px;
+}
+.category_wrap .c_tab_wrap li a{}
+.category_wrap .c_tab_wrap .active{
+    background-color: #000;
+    border-top-left-radius: 20px;
+}
+.category_wrap .c_tab_wrap .active a{
+    color: #fff;
+}
+/* 공통 섹션 */
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container .title_wrap{
+    padding: 200px 0 100px;
+}
+.container .title_wrap h1{
+    width: 175px;
+    margin: 0 auto;
+}
+.container .title_wrap h1 img{width: 100%;}
+.container .title_wrap p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.13rem;
+}
+.container .new_wrap{}
+.container .new_wrap .new_product_wrap{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 261px;
+}
+.container .new_wrap .new_product_wrap li{}
+.container .new_wrap .new_product_wrap li a{}
+.container .new_wrap .new_product_wrap li a img{}
+.container .new_wrap .new_product_wrap li .n_txt{
+    padding-top: 20px;
+    text-align: center;
+}
+.container .new_wrap .new_product_wrap li .n_txt h2{
+    font-size: 1.13rem;
+    font-weight: 700;
+}
+.container .new_wrap .new_product_wrap li .n_txt p{
+    padding: 20px 0 40px;
+}
+.container .new_wrap .new_product_wrap li .n_txt a{
+    border: 1px solid #000;
+    padding: 10px 30px;
+}
+.container .best_wrap{
+    padding-top: 200px;
+}
+.container .best_wrap h1{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 2.50rem;
+    text-align: center;
+}
+.container .best_wrap .best_product_wrap{
+    padding: 100px 0;
+}
+.container .best_wrap .best_product_wrap .best_product_li{}
+.container .best_wrap .best_product_wrap .best_product_li .b_img{}
+.container .best_wrap .best_product_wrap .best_product_li .b_img a{}
+.container .best_wrap .best_product_wrap .best_product_li .b_img a img{}
+.container .best_wrap .best_product_wrap .best_product_li .b_txt{
+    text-align: center;
+}
+.container .best_wrap .best_product_wrap .best_product_li .b_txt h2{
+    font-size: 1.50rem;
+    font-weight: 500;
+}
+.container .best_wrap .best_product_wrap .best_product_li .b_txt p{
+    font-weight: 300;
+    font-size: 1.13rem;
+    padding: 20px 0 30px;
+}
+.container .best_wrap .best_product_wrap .best_product_li .b_txt a{
+    font-weight: 300;
+    border: 1px solid #000;
+    padding: 10px 30px;
+}
+.container .best_wrap .best_product_wrap .best_product_li .b_txt .more_view{}
+
+
+
+.container .swiper-button-next {
+    color: #000;
+}
+
+.container .swiper-button-prev {
+    color: #000;
+}
+.container .swiper-pagination{
+    background-color: #eee;
+    padding: 0 260px;
+}
+.container .swiper-pagination .swiper-pagination-progressbar-fill{
+    background-color: #000;
+}
+.container .best_product_wrap .swiper-pagination-horizontal{
+    margin-top: 200px;
+    position: initial;
+}
+/* 소니 섹션 */
+.sony_wrap{border-top: 1px solid #eee; background-color: #F9FEFF;}
+/* 유닉스 섹션 */
+.unix_wrap{}
+.unix_wrap .title_wrap{}
+.unix_wrap .title_wrap h1{}
+.unix_wrap .title_wrap h1 img{}
+.unix_wrap .title_wrap h1 p{}
+.unix_wrap .new_wrap{}
+.unix_wrap .new_wrap .new_product_wrap{}
+.unix_wrap .new_wrap .new_product_wrap li{}
+.unix_wrap .new_wrap .new_product_wrap li a{}
+.unix_wrap .new_wrap .new_product_wrap li a img{}
+.unix_wrap .new_wrap .new_product_wrap li .n_txt{}
+.unix_wrap .new_wrap .new_product_wrap li .n_txt h2{}
+.unix_wrap .new_wrap .new_product_wrap li .n_txt p{}
+.unix_wrap .best_wrap{}
+.unix_wrap .best_wrap h1{}
+.unix_wrap .best_wrap .best_product_wrap{}
+.unix_wrap .best_wrap .best_product_li{}
+.unix_wrap .best_wrap .best_product_li .b_img{}
+.unix_wrap .best_wrap .best_product_li .b_img a{}
+.unix_wrap .best_wrap .best_product_li .b_img a img{}
+.unix_wrap .best_wrap .best_product_li .b_txt{}
+.unix_wrap .best_wrap .best_product_li .b_txt h2{}
+.unix_wrap .best_wrap .best_product_li .b_txt p{}
+.unix_wrap .best_wrap .best_product_li .b_txt a{}
+.unix_wrap .best_wrap .best_product_li .b_txt .more_view{}
+.unix_wrap .swiper-button-next{}
+.unix_wrap .swiper-button-prev{}
+.unix_wrap .swiper-pagination{}
+.unix_wrap .swiper-pagination .swiper-pagination-progressbar-fill{}
+.unix_wrap .swiper-pagination .swiper-pagination-horizontal{}
+/* 쿠첸 섹션 */
+.cuchen_wrap{
+    background-color: #F9FEFF;
+}
+.cuchen_wrap .page_down{
+    /* background-color: red; */
+    margin: 0 auto;
+    padding-top: 150px;
+}
+/* 픽 섹션 */
+.pick_wrap{
+    display: flex;
+    margin: 200px 80px 200px;
+}
+.pick_wrap .pick_title_wrap{
+    width: 25%;
+}
+.pick_wrap .pick_title_wrap h2{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1.50rem;
+}
+.pick_wrap .pick_title_wrap p{
+    font-size: 1.50rem;
+    font-weight: 700;
+    padding-top: 20px;
+    line-height: 140%;
+}
+.pick_wrap .pick_title_wrap span{
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #0064FF;
+    line-height: 140%;
+}
+.pick_wrap .pick_product_wrap{}
+.pick_wrap .pick_product_wrap .pick_product_li{}
+.pick_wrap .pick_product_wrap .pick_product_li a{}
+.pick_wrap .pick_product_wrap .pick_product_li a img{}
+.pick_wrap .pick_product_wrap .pick_product_li p{
+    padding: 20px 0;
+    font-size: 1.13rem;
+    line-height: 140%;
+}
+.pick_wrap .pick_product_wrap .pick_product_li p img{}
