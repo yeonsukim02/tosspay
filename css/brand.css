@@ -104,6 +104,7 @@ main .visual .txt a{
 .container .new_wrap .new_product_wrap li .n_txt a{
     border: 1px solid #000;
     padding: 10px 30px;
+    display: inline-block;
 }
 .container .best_wrap{
     padding-top: 200px;
@@ -126,6 +127,7 @@ main .visual .txt a{
 .container .best_wrap .best_product_wrap .best_product_li .b_txt h2{
     font-size: 1.50rem;
     font-weight: 500;
+    padding-top: 20px;
 }
 .container .best_wrap .best_product_wrap .best_product_li .b_txt p{
     font-weight: 300;
@@ -136,6 +138,7 @@ main .visual .txt a{
     font-weight: 300;
     border: 1px solid #000;
     padding: 10px 30px;
+    display: inline-block;
 }
 .container .best_wrap .best_product_wrap .best_product_li .b_txt .more_view{}
 
@@ -144,18 +147,21 @@ main .visual .txt a{
 .container .swiper-button-next {
     color: #000;
 }
-
 .container .swiper-button-prev {
     color: #000;
 }
+.container .swiper-button-prev::after {margin-left: 10px;}
+.container .swiper-button-next::after {margin-right: 10px;}
 .container .swiper-pagination{
     background-color: #eee;
     padding: 0 260px;
+    width: 1600px;
+    margin: 0 auto;
 }
 .container .swiper-pagination .swiper-pagination-progressbar-fill{
     background-color: #000;
 }
-.container .best_product_wrap .swiper-pagination-horizontal{
+.container .swiper .swiper-pagination-horizontal{
     margin-top: 200px;
     position: initial;
 }
@@ -178,15 +184,15 @@ main .visual .txt a{
 .unix_wrap .best_wrap{}
 .unix_wrap .best_wrap h1{}
 .unix_wrap .best_wrap .best_product_wrap{}
-.unix_wrap .best_wrap .best_product_li{}
-.unix_wrap .best_wrap .best_product_li .b_img{}
-.unix_wrap .best_wrap .best_product_li .b_img a{}
-.unix_wrap .best_wrap .best_product_li .b_img a img{}
-.unix_wrap .best_wrap .best_product_li .b_txt{}
-.unix_wrap .best_wrap .best_product_li .b_txt h2{}
-.unix_wrap .best_wrap .best_product_li .b_txt p{}
-.unix_wrap .best_wrap .best_product_li .b_txt a{}
-.unix_wrap .best_wrap .best_product_li .b_txt .more_view{}
+.unix_wrap .best_wrap .best_product_wrap.best_product_li{}
+.unix_wrap .best_wrap .best_product_wrap.best_product_li .b_img{}
+.unix_wrap .best_wrap .best_product_wrap.best_product_li .b_img a{}
+.unix_wrap .best_wrap .best_product_wrap.best_product_li .b_img a img{}
+.unix_wrap .best_wrap .best_product_wrap.best_product_li .b_txt{}
+.unix_wrap .best_wrap .best_product_wrap.best_product_li .b_txt h2{}
+.unix_wrap .best_wrap .best_product_wrap.best_product_li .b_txt p{}
+.unix_wrap .best_wrap .best_product_wrap.best_product_li .b_txt a{}
+.unix_wrap .best_wrap .best_product_wrap.best_product_li .b_txt .more_view{}
 .unix_wrap .swiper-button-next{}
 .unix_wrap .swiper-button-prev{}
 .unix_wrap .swiper-pagination{}
@@ -201,6 +207,8 @@ main .visual .txt a{
     margin: 0 auto;
     padding-top: 150px;
 }
+.cuchen_wrap .page_down a{}
+.cuchen_wrap .page_down a img{}
 /* 픽 섹션 */
 .pick_wrap{
     display: flex;

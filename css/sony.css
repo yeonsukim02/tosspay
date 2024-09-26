@@ -126,16 +126,15 @@ main .product_wrap #product_detail_wrap .p_total .total_wrap .total_price_wrap{
 main .product_wrap #product_detail_wrap .p_total .total_wrap .total_price_wrap .total_price{}/* - */
 main .product_wrap #product_detail_wrap .p_total .btn_wrap{
     display: flex;
+    align-items: center;
     margin-top: 30px;
 }
 main .product_wrap #product_detail_wrap .p_total .btn_wrap .btn_icon{}
 main .product_wrap #product_detail_wrap .p_total .btn_wrap .btn_icon a{
     margin-right: 10px;
-    width: 45px; height: 45px;
-    border: 1px solid #898989;
-    
+    display: inline-block;
 }
-main .product_wrap #product_detail_wrap .p_total .btn_wrap .btn_icon a img{}
+main .product_wrap #product_detail_wrap .p_total .btn_wrap .btn_icon a img{width: 100%;}
 main .product_wrap #product_detail_wrap .p_total .btn_wrap .btn_buy{
     margin-left: 45px;
     padding: 15px 125px;
